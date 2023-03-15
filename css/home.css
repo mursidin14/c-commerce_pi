@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
+
 @font-face {
   font-family: "Alien Encounters";
   src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
@@ -11,7 +12,9 @@
 
 /* Header Start  */
 .container-fluid {
-  padding: 0 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 2000px;
 }
 .navbar-brand {
   font-family: "Alien Encounters";
@@ -91,11 +94,63 @@
 }
 
 #home .image {
-     padding: 61px 113px 78px 0;
+  padding: 61px 113px 78px 0;
 }
 #home .image img {
-    width: 100%;
+  width: 100%;
 }
-
-
 /* Home End */
+
+/* Layanan Start */
+
+.carousel {
+  transform: translateY(151px);
+  border-bottom: 2px solid #d1d1d1;
+  padding-bottom: 50px;
+}
+.carousel-item .layanan {
+  padding: 20px 0;
+  background: transparent;
+  transform: translateX(-20px);
+}
+.carousel-item .layanan .btn-lyn {
+  padding: 20px 20px;
+  margin: 0 25px;
+  background: transparent;
+  border: 2px solid #d1d1d1;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #545454;
+  text-decoration: none;
+}
+.carousel .btn-next {
+  width: 54px;
+  height: 54px;
+  background-color: #545454;
+  transform: translateY(5px);
+}
+/* Layanan End */
+
+/* Menu Special Start */
+.carousel .special-menu{
+  margin: 50px 0;
+}
+.carousel .special-menu h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+.carousel .special-menu p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  color: #4b4b4b;
+}
+/* Menu Special End  */
