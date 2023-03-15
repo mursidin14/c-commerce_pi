@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @font-face {
   font-family:'Alien Encounters';
   src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
@@ -23,7 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem ;
-  gap: 4rem;
+  gap: 5rem;
   display: flex;
   flex-direction: row;
 }
@@ -61,4 +63,18 @@ input {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+}
+
+.account {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.account p {
+  margin-top: 8px;
+  margin-bottom: 0rem;
 }
