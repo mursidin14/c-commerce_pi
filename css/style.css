@@ -85,10 +85,32 @@ input {
   padding: 50px 20px;
 }
 
+.terjual {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.empatratus {
+  position: absolute;
+  left: 598px;
+  top: 219px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #8A8A8A;
+}
+
 .head-beam {
   padding: 10px 20px;
   gap: 5rem;
   display: flex;
+  position: absolute;
+  left: 2px;
+  top: 645px;
 }
 
 .text-hero {
@@ -96,7 +118,6 @@ input {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
-  margin-top: -38rem;
+  margin-top: -31rem;
   padding-left: 33rem;
 }
