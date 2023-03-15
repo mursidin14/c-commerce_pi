@@ -85,23 +85,16 @@ input {
   padding: 50px 20px;
 }
 
-.terjual {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-}
-
 .empatratus {
-  position: absolute;
-  left: 588px;
-  top: 219px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
   color: #8A8A8A;
+  position: absolute;
+  top: 50px;
+  left: 5rem;
 }
 
 .head-beam {
@@ -113,11 +106,33 @@ input {
   top: 645px;
 }
 
+#rating {
+  display: flex;
+  gap: 10px;
+  padding-inline: 9rem;
+  margin-top: -9%;
+}
+
 .text-hero {
+  display: inline-block;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  margin-top: -31rem;
-  padding-left: 33rem;
+  position: absolute;
+  top: 11rem;
+  left: 33rem;
+}
+
+.jumlah-rating {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  line-height: 22px;
+  justify-content: center;
+  margin-top: -2rem;
+  padding-top: 1rem;
+  margin-left: 2rem;
 }
