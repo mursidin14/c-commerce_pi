@@ -4,7 +4,9 @@
   font-family: "Alien Encounters";
   src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
 }
-
+body{
+  height: 2000px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,6 @@
 .container-fluid {
   padding-left: 55px;
   padding-right: 55px;
-  height: 2000px;
 }
 .navbar-brand {
   font-family: "Alien Encounters";
