@@ -126,14 +126,44 @@ input {
 }
 
 .jumlah-rating {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
   display: flex;
   line-height: 22px;
   justify-content: center;
-  margin-top: -2rem;
-  padding-top: 1rem;
-  margin-left: 2rem;
+  margin-top: -1rem;
+  padding-left: 2rem;
+}
+
+#harga {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.rincian {
+  border: 1px solid #DDDDDD;
+  position: absolute;
+  width: 432.5px;
+  height: 0px;
+  left: 525.5px;
+  top: 375px;
+}
+
+.detail {
+  position: absolute;
+  top: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #2CA367;
+}
+
+.rincian1 {
+  position: absolute;
+  width: 432.5px;
+  height: 0px;
+  left: 525.5px;
+  top: 426px;
+  border: 1px solid #DDDDDD;
 }
