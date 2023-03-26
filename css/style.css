@@ -150,12 +150,25 @@ input {
 .detail {
   position: absolute;
   top: 14px;
+}
+
+.detail a {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   color: #2CA367;
+  text-decoration: none;
+}
+
+.garis-hijau {
+  position: absolute;
+  width: 50.5px;
+  height: 0px;
+  left: 525.5px;
+  top: 425px;
+  border: 1px solid #2CA367;
 }
 
 .rincian1 {
