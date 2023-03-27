@@ -230,6 +230,7 @@ input {
   line-height: 22px;
   color: #868686;
   top: 32rem;
+  left: 33rem;
 }
 
 .kategori span {
@@ -249,5 +250,17 @@ input {
 }
 
 .etalase span {
+  color: #000000;
+}
+
+.desc-detail {
+  position: absolute;
+  left: 33rem;
+  top: 37rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
   color: #000000;
 }
