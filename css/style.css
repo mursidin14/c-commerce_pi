@@ -204,3 +204,50 @@ input {
 .kondisi span {
   color: #000000;
 }
+
+.berat {
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #868686;
+  top: 30rem;
+  left: 33rem;
+}
+
+.berat span {
+  color: #000000;
+}
+
+.kategori {
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #868686;
+  top: 32rem;
+}
+
+.kategori span {
+  color: #000000;
+}
+
+.etalase {
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #868686;
+  top: 34rem;
+  left: 33rem;
+}
+
+.etalase span {
+  color: #000000;
+}
