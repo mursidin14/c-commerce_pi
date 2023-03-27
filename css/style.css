@@ -190,10 +190,17 @@ input {
 }
 
 .kondisi {
+  position: absolute;
+  top: 28rem;
+  left: 33rem;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   color: #868686;
+}
+
+.kondisi span {
+  color: #000000;
 }
