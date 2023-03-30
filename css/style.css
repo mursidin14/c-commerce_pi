@@ -295,6 +295,7 @@ input {
   position: absolute;
   width: 354px;
   height: 384px;
+  margin: 0px 0px;
   left: 64rem;
   top: 23%;
   border: 1px solid #A6A6A6;
@@ -472,6 +473,12 @@ input {
   white-space: nowrap;
 }
 
+.keranjang-btn:hover {
+  background: rgb(255, 255, 255);
+  color: #2CA367;
+  transition: background-color 300ms ease 0s;
+}
+
 .beli-btn {
   background-color: var(--NN0,#FFFFFF);
   border: 1px solid var(--GN500,#00AA5B);
@@ -492,6 +499,11 @@ input {
   text-indent: initial;
   transition: background-color 300ms ease 0s;
   width: 18%;
+}
+
+.beli-btn:hover {
+  background: #00AA5B;
+  color: white;
 }
 
 .account-sosmed {
@@ -537,6 +549,13 @@ input {
   left: 9%;
 }
 
+.online {
+  display: flex;
+  justify-content: center;
+  margin: -58px auto;
+  padding-right: 80rem;
+}
+
 .online p {
   font-family: 'Poppins';
   font-style: normal;
@@ -544,4 +563,45 @@ input {
   font-size: 15px;
   line-height: 22px;
   color: #2CA367;
+}
+
+.garis-border {
+  position: absolute;
+  height: 136px;
+  left: 33rem;
+  top: 51rem;
+  border: 1px solid #9F9F9F;
+}
+
+.followers {
+  display: flex;
+  justify-content: center;
+  margin-right: 10rem;
+  position: relative;
+  top: -1rem;
+}
+
+.followers p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #737373;
+}
+
+.jumlah-follow {
+  top: 3rem;
+  display: flex;
+  position: relative;
+  left: -6rem;
+}
+
+.jumlah-follow p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
 }
