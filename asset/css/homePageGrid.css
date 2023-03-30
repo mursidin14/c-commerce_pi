@@ -1,0 +1,73 @@
+
+@media (max-width: 640px) {
+
+    .form-control {
+      visibility: hidden;
+    }
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+      font-size: 14px;
+    }
+    .hero-container {
+      padding: 0 0%;
+    }
+  
+    .hero .card {
+      width: 400px;
+      left: 20px;
+      bottom: 0;
+    }
+  
+    .hero .card .card-title {
+      font-size: 22px;
+      line-height: 36px;
+      color: #000000;
+    }
+  
+    .hero .card .rating {
+      font-size: 15px;
+    }
+  
+    .hero .card .card-desc {
+      font-size: 13px;
+      line-height: 22px;
+      color: #000000;
+    }
+  
+    .hero .card .card-harga {
+      font-size: 26px;
+    }
+  
+    .hero img {
+      width: 220px;
+      left: 55%;
+    }
+
+    
+.footer .footer-links ul li {
+  justify-content: center;
+}
+.footer .footer-links .social-links  {
+  justify-content: center;
+  }
+  
+  .hero .icon-boxes {
+    padding-bottom: 60px;
+  }
+  
+  @media (min-width: 1200px) {
+    .hero .icon-boxes:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(50% + 20px);
+      background-color: #fff;
+    }
+  }
+}
