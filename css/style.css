@@ -528,11 +528,20 @@ input {
 }
 
 .akun {
-  background: green;
+  background: #2CA367;
   border: 3.5px solid rgb(var(--ig-primary-background));
   border-radius: 50%;
   box-sizing: border-box;
   position: absolute;
   top: 54rem;
   left: 9%;
+}
+
+.online p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #2CA367;
 }
