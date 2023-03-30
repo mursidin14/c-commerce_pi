@@ -495,6 +495,13 @@ input {
 }
 
 .account-sosmed {
-  border: 1px solid #A6A6A6;
-  border-radius: 15px;
+  border-top: 1px solid #a6a6a6;
+  width: 100%;
+  margin: 0px auto;
+  padding: 32px 16px;
+}
+
+.account-sosmed img {
+  width: 100px;
+  height: 100px;
 }
