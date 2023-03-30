@@ -479,7 +479,7 @@ input {
   color: var(--GN500,#00AA5B);
   cursor: pointer;
   display: block;
-  font-family: inherit;
+  font-family: 'Poppins';
   font-weight: 800;
   font-size: 1rem;
   height: 40px;
