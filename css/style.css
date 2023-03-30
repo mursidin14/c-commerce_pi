@@ -497,11 +497,42 @@ input {
 .account-sosmed {
   border-top: 1px solid #a6a6a6;
   width: 100%;
-  margin: 0px auto;
-  padding: 32px 16px;
+  margin: 20px auto;
+  padding: 32px 30px;
 }
 
 .account-sosmed img {
   width: 100px;
   height: 100px;
+}
+
+.nama-account {
+  display: flex;
+  justify-content: center;
+  margin-top: -6rem;
+  padding-right: 79rem;
+}
+
+.nama-account p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.online-account {
+  height: 12px;
+  margin: 2px -2px -2px 2px;
+  width: 12px;
+}
+
+.akun {
+  background: green;
+  border: 3.5px solid rgb(var(--ig-primary-background));
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 54rem;
+  left: 9%;
 }
