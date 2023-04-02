@@ -2,7 +2,7 @@
 
 @font-face {
   font-family:'Alien Encounters';
-  src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
+  src: url(../asset/fonts/Alien/Alien-Encounters-Regular.ttf);
 }
 
 * {
@@ -630,6 +630,39 @@ input {
 }
 
 .jumlah-following p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.jam-buka {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -163px;
+  right: 7rem;
+}
+
+.jam-buka p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #737373;
+}
+
+.waktu-jam {
+  top: 3rem;
+  display: flex;
+  position: relative;
+  left: -8rem;
+}
+
+.waktu-jam p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
