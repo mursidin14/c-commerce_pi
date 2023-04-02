@@ -1,0 +1,65 @@
+@media (min-width: 767px) {
+  nav form {
+    width: 100%;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .account .btn-daftar{
+    display: none;
+  }
+} 
+
+
+@media (max-width: 640px) {
+/* -----------------------------------------
+Header Start 
+------------------------------------------- */
+nav form {
+  width: 100%!important;
+}
+nav form .btn img{
+  width: 15px;
+}
+.account .btn-daftar{
+  display: none;
+}
+.navbar-brand{
+  display: none;
+
+}
+/*--------------------------------------------------------------
+/* kategori-pencarian & kategori-Product-3
+--------------------------------------------------------------*/
+
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+  .footer .footer-links .social-links {
+    justify-content: center;
+  }
+
+  .hero .icon-boxes {
+    padding-bottom: 60px;
+  } 
+}
+  @media (min-width: 1200px) {
+    /* .hero .icon-boxes:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(50% + 20px);
+      background-color: #fff;
+    }
+    nav form {
+      width: 75%!important;
+    }
+    .navbar-brand{
+      display: block;
+    } */
+  }
+
+
+

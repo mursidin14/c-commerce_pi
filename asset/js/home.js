@@ -1,6 +1,8 @@
 const menuBar = document.querySelector('.menu-bar');
 const trolly = document.querySelector('#trolly');
 const overlay = document.querySelector('.overlay')
+const btnCard = document.querySelector('.btn-card')
+const caroAktiv = document.querySelector('.carousel-item')
 
 if (trolly) {
   trolly.addEventListener('click', () => {
@@ -27,3 +29,9 @@ if (overlay) {
       }
   });
 }
+
+
+// btnCard.addEventListener('click', () => {
+//   caroAktiv.classList.toggle('active');
+//   alert('daddad')
+// })
