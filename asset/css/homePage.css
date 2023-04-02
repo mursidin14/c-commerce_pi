@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
-@import url("../bootstrap-5.3.0/css/bootstrap-grid.css");
 @font-face {
   font-family: "Alien Encounters";
-  src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
+  src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
 }
-.btn {
-  background: var(--hijauMuda);
-  color: black;
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+/* 
 .my-button {
   background-color: var(--bs-indigo);
   color: white;
@@ -24,7 +27,7 @@
   background-color: #028c0a;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
-}
+} */
 
 @keyframes pulse {
   0% {
@@ -42,63 +45,33 @@
   --span: #929292;
   --bt: 2px solid #D1D1D1;
 }
-
-header {
-  position: relative;
-  z-index: 9999;
-  background: #fff;
-}
-
-header span {
-  font-size: 12px;
-}
-
-header .header {
-  padding: 8px 32px;
-  background: var(--putihF4);
-}
-
-header .header span {
-  color: var(--span);
-}
-
-header .header span:hover {
-  cursor: pointer;
-  color: var(--hijauMuda);
-}
-
-header .header img {
+/* ------------------------------------------^^^^^^^^^^
+header Start 
+----------------------------------------- >>>>>>>>>> */
+nav .btn img {
   width: 20px;
 }
 
-header nav {
-  padding: 8px 55px;
-  background: #fff;
-}
-header nav .logo {
+ nav .navbar-brand {
   font-family: "Alien Encounters";
   font-weight: 400;
   font-size: 36px;
   color: var(--hijauPolos);
   text-decoration: none;
 }
-
-header nav span {
-  color: var(--span);
-}
-header nav .text-kategory {
-  padding: 2px 5px;
-}
-
-header nav .wrap-search {
-  position: relative;
-  background: #fff;
-  width: 100%;
+nav form {
   height: 43px;
+  align-items: center;
 }
+ nav .btn {
+   border: none;
+   transform: translateX(10px);
+  }
+  nav .btn .search-img{
+    background: none;
+  }
 
-header nav .wrap-search .form-control {
-  position: absolute;
+ nav  .form-control {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -107,80 +80,63 @@ header nav .wrap-search .form-control {
   z-index: 1;
   padding-left: 7%;
 }
-header nav .wrap-search .form-control::placeholder {
+ nav .form-control::placeholder {
   color: #cdcdcd;
   font-size: 14px;
 }
-header nav .wrap-search .form-control:focus {
-  box-shadow: none;
+ nav  .form-control:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--hijauMuda);
-  background: #fff;
-}
-
-header nav .wrap-search .wrap-icon-search {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 7%;
-}
-
-header nav .img-search,
-header nav .img-shop {
-  width: 18px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header nav .img-shop {
-  width: 20px;
-}
-header nav .img-notif {
-  height: 20px;
-}
-header nav .img-message {
-  width: 20px;
-}
-
-header nav .wrap-icon-shop,
-header nav .wrap-icon-notif,
-header nav .wrap-icon-message {
-  position: relative;
   background: transparent;
-  height: max-content;
-  width: max-content;
-  padding: 0px 8px 5px 8px;
-  transition-duration: 0.5s;
-}
-header nav .wrap-icon-shop:hover,
-header nav .wrap-icon-notif:hover,
-header nav .wrap-icon-message:hover {
-  cursor: pointer;
 }
 
-header nav .profil {
-  width: 37px;
-  height: 35px;
-  background: url(../asset/account/account.png);
-  background-position: center;
-  background-size: cover;
-  border: 2px solid var(--span);
-}
-header nav .account {
-  font-size: 15px;
-  text-decoration: none;
-  font-family: "Montserrat";
-  white-space: nowrap;
-  color: black;
-  font-weight: 400;
-  padding: 2px 5px;
-}
-header nav .account:hover {
-  background-color: #f3f4f5;
+nav .icon button:hover{
+  background: var(--hijauMuda);
   border-radius: 4px;
-  color: var(--hijauMuda);
 }
+nav .icon button {
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+nav .icon button img  {
+  width: 18px;
+}
+nav .account .profil img  {
+  width: 28px;
+  height: 25px;
+  border: 2px solid var(--span);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+ 
+nav .account button{
+  display: flex;align-items: center;
+  color: #929292;
+  background: none;
+  border: none;
+}
+
+
+nav .account .btn-daftar{
+  
+  font-weight: bold;
+}
+nav .account .btn-daftar:hover{
+  background: var(--hijauMuda);
+  border-radius: 4px;
+  color: white;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
+@import url("../bootstrap-5.3.0/css/bootstrap-grid.css");
+@font-face {
+  font-family: "Alien Encounters";
+  src: url(../asset/fonts/Alien-Encounters-Regular.ttf);
+}
+
 
 /* menu bar */
 .menu-bar:hover {
@@ -286,6 +242,47 @@ header nav .account:hover {
   text-decoration: none;
 }
 /* 
+.home-inner .card {
+  width: 422px;
+  position: absolute;
+  bottom: 70px;
+}
+
+.home-inner .card .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.home-inner .card .rating {
+  font-size: 20px;
+}
+
+.home-inner .card .card-desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0;
+  display: inline;
+}
+
+.home-inner .card .card-harga {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+  margin: 0;
+  padding-block: 13px 0;
+} */
+
 .home-inner img {
   width: 320px;
   position: absolute;

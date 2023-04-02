@@ -3,59 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce_Pi</title>
+
+    <!-- Icon Title  -->
+    <link rel="shortcut icon" href="asset/img/img-homePage/section-home/account.png" type="image/x-icon">
 
     <!-- Css Bootstrap-5.3.0  -->
     <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="asset/css/homePageGrid.css"> 
+    <link rel="stylesheet" href="asset/css/homePageGrid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap-glightbox.css"  />
+    <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap-swiper-bundle.min.css"  />
 
     <!-- Css Bootstrap-5.3.0 Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
     <!-- My Css  -->
     <link rel="stylesheet" href="asset/css/homeStyle.css" />
-    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="asset/css/homePage.css" />
+    <link rel="stylesheet" href="asset/css/homeGrid.css" />
   </head>
   <body>
     <div class="overlay"></div>
     <!-- Header Start  -->
-    <header>
-      <nav class="d-flex flex-column">
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="#" target="_blank" class="logo d-block">Shopfrieger</a>
-          <!-- <span class="text-kategory mx-2">Kategory</span> -->
-          <div class="wrap-search mx-5">
-            <input type="text" class="form-control" placeholder="Cari di Shopfrieger" />
-            <div class="wrap-icon-search">
-              <img class="img-search" src="asset/img/img-homePage/section-home/search.png" alt="icon-search" />
-            </div>
-          </div>
-          <div class="wrap-icon-shop" id="trolly">
-            <img class="img-shop" src="asset/img/img-homePage/section-home/trolly.png" alt="" />
-          </div>
-          <div class="wrap-icon-notif ms-4">
-            <img class="img-notif" src="asset/img/img-homePage/section-home/notif.png" alt="" />
-          </div>
-          <div class="wrap-icon-message mx-3">
-            <img class="img-message" src="asset/img/img-homePage/section-home/message.png" alt="" />
-          </div>
-
-          <div class="d-flex align-items-center">
-            <button class="profil rounded-circle me-3"></button>
-            <a href="#" class="account">account guest</a>
-          </div>
+    <nav class="navbar justify-content-center  bg-white">
+      <div class="container-fluid row gap-4 justify-content-center">
+        <a class="navbar-brand  col-2 d-none d-lg-block">Shopfrieger</a>
+        <form class="d-flex col-12 col-lg-9 col-md-10  position-relative " role="search">
+          <button class="btn position-absolute btn-outline-success " type="submit"><img class="search-img" src="asset/img/search.png"  alt=""></button>
+          <input class="form-control ms-2" type="search" placeholder="Cari di Shopfrieger" aria-label="Search">
+          <div class="d-flex icon ms-lg-3 gap-2  align-items-center">
+          <button><img src="asset/img/trolly.png" alt=""></button>
+          <button><img src="asset/img/notif.png" alt=""></button>
+          <button><img src="asset/img/message.png" alt=""></button>
         </div>
-      </nav>
-
-      <div id="menu-bar" class="menu-bar flex-column justify-content-between align-items-center">
-        <img src="asset/img/img-homePage/section-home/menu-bar1.avif" alt="" />
-        <h4>Wah keranjang belanjaan kamu kosong</h4>
-        <p class="text-center">
-          Daripada dianggurin, mending diisi dengan barang barang <br />
-          impianmu. Yuk cek sekarang!
-        </p>
-        <button class="my-button">Lihat Rekomendasi</button>
+          <div class="d-flex account  ms-2 gap-2  align-items-center">
+          <button class="profil"><img src="asset/img/img-homePage/section-home/account.png" alt=""></button>
+          <button class="btn-daftar d-none d-lg-block d-md-block">Daftar</button>
+        </div>
+        </form>
       </div>
-    </header>
+    </nav>
     <!-- Header End  -->
 
     <!-- Hero Start -->
@@ -99,7 +88,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-md-12 col-sm-3 d-md-flex align-items-center justify-content-center gap-3">
+                <div class="col-md-12 col-sm-3 py-2 d-md-flex align-items-center justify-content-center gap-3">
                   <div class="card">
                     <a href="https://www.tokopedia.com/p?nref=chead" class="card-link">
                       <img src="asset/img/img-homePage/layanan/katagori.png" class="card-img-top" alt="icon-Kategori" />
@@ -419,79 +408,66 @@
 
     <!-- Katagory Pencarian Start -->
     <section id="kategori-pencarian" class="kategori-pencarian">
-      <div class="container" >
+      <div class="container">
         <h3 class="text-start my-3 judul">Berdasarkan Pencarianmu <span>Lihat Semua</span></h3>
-        <div class="content row py-5 justify-content-center d-flex page-next">
-          <div class="card-inner3 d-flex justify-content-center gap-3 align-items-center">
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball
-                Pria Wanita...</div>
+        <div class="content py-5 justify-content-center d-flex page-next">
+          <div class="row justify-content-center gap-3 align-items-center">
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 5.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball Pria Wanita...</div>
               <div class="ps-3 py-1 card-price">Rp 129.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan
-                Panjang Atasan...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 6.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan Panjang Atasan...</div>
               <div class="ps-3 py-1 card-price">Rp 70.500</div>
               <a href="#" class="ms-3 btn-card">Grosir</a>
               <div class="ps-3 py-1 desc">Jogja</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 2 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 7.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM
-                I9-12900H 16GB...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 7.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM I9-12900H 16GB...</div>
               <div class="ps-3 py-1 card-price">Rp 27.585.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Kota Pare</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 8.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP
-                Camera, Splash...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 8.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP Camera, Splash...</div>
               <div class="ps-3 py-1 card-price">Rp 2.280.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs
-                Cookware Seta...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 9.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs Cookware Seta...</div>
               <div class="ps-3 py-1 card-price">Rp 124.900</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM
-                1 Kg</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+              <div class="card-img"><img src="asset/img/img-homePage/product/product 2.png" width="100%" class="img-fluid" alt="" /></div>
+              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM 1 Kg</div>
               <div class="ps-3 py-1 card-price">Rp 18.500</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
-
-          
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <!-- Katagory Pencarian End -->
 
     <!-- Katagory Product-2 Strat -->
@@ -657,7 +633,7 @@
       <div class="container">
         <h3 class="text-start my-3 judul">Promo Brand Lainnya</h3>
         <div class="image my-3">
-          <img src="asset/img/brand.png" class="py-5" width="100%" alt="">
+          <img src="asset/img/img-homePage/section-home/brand.png" class="py-5" width="100%" alt="">
         </div>
       </div>
     </section> 
@@ -670,63 +646,46 @@
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-12 col-sm-3 d-md-flex align-items-center justify-content-start gap-3">
-                  <div class="card"  style="background: linear-gradient(261.51deg, #DB0000 -6.58%, #830000 109.32%);">
-                    <a href="https://www.tokopedia.com/p?nref=chead" class="card-link">For You
-                    </a>
-                  </div>
-    
-                  <div class="card" style="background: linear-gradient(261.51deg, #FFB800 -6.58%, #AF7D00 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Special Discount
-                    </a>
-                  </div>
-    
-                  <div class="card" style="background: linear-gradient(261.51deg, #9E00FF -6.58%, #4E007D 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Aktivitasmu
-                    </a>
-                  </div>
-                  <div class="card" style="background: linear-gradient(261.51deg, #1DCF00 -6.58%, #117700 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Feature Phone
-                    </a>
-                  </div>
-    
-                  <div class="card" style="background: linear-gradient(261.51deg, #009DCF -6.58%, #006687 109.32%); ">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Earpho
-                    </a>
-                  </div>
+              <div class="row gap-lg-0 gap-sm-1 justify-content-center">
+                <div class="card col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #db0000 -6.58%, #830000 109.32%)">
+                  <a href="https://www.tokopedia.com/p?nref=chead" class="card-link">For You </a>
+                </div>
+
+                <div class="card col-6 col-lg-3 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #ffb800 -6.58%, #af7d00 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Special Discount </a>
+                </div>
+
+                <div class="card col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #9e00ff -6.58%, #4e007d 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Aktivitasmu </a>
+                </div>
+                <div class="card col-6 col-lg-3 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #1dcf00 -6.58%, #117700 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Feature Phone </a>
+                </div>
+
+                <div class="card col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #009dcf -6.58%, #006687 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Earphone </a>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-12 col-sm-3 d-md-flex align-items-center justify-content-start gap-3">
+              <div class="row gap-lg-0 gap-sm-1 justify-content-center">
+                <div class="card col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #db0000 -6.58%, #830000 109.32%)">
+                  <a href="https://www.tokopedia.com/p?nref=chead" class="card-link">For You </a>
+                </div>
 
-                  <div class="card" style="background: linear-gradient(261.51deg, #009DCF -6.58%, #006687 109.32%); ">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Earphone
-                    </a>
-                  </div>
+                <div class="card col-6 col-lg-3 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #ffb800 -6.58%, #af7d00 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Special Discount </a>
+                </div>
 
-                  <div class="card"  style="background: linear-gradient(261.51deg, #DB0000 -6.58%, #830000 109.32%);">
-                    <a href="https://www.tokopedia.com/p?nref=chead" class="card-link">For You
-                    </a>
-                  </div>
-    
-                  <div class="card" style="background: linear-gradient(261.51deg, #FFB800 -6.58%, #AF7D00 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Special Discount
-                    </a>
-                  </div>
-    
-                  <div class="card" style="background: linear-gradient(261.51deg, #9E00FF -6.58%, #4E007D 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Aktivitasmu
-                    </a>
-                  </div>
-                  <div class="card" style="background: linear-gradient(261.51deg, #1DCF00 -6.58%, #117700 109.32%);">
-                    <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Feature Phone
-                    </a>
-                  </div>
-    
-                  
+                <div class="card col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #9e00ff -6.58%, #4e007d 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Aktivitasmu </a>
+                </div>
+                <div class="card col-6 col-lg-3 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #1dcf00 -6.58%, #117700 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Feature Phone </a>
+                </div>
+
+                <div class="card order-2 col-6 col-lg-2 col-md-4 col-sm-6" style="background: linear-gradient(261.51deg, #009dcf -6.58%, #006687 109.32%)">
+                  <a href="https://www.tokopedia.com/p/handphone-tablet?source=homepage.dynamic_icon.0.680" class="card-link">Earphone </a>
                 </div>
               </div>
             </div>
@@ -746,171 +705,138 @@
 
     <!-- Katagory product-3 Start -->
     <section id="kategori-produk-3" class="kategori-produk-3">
-      <div class="container" >
+      <div class="container">
         <div class="content row py-5 justify-content-center d-flex page-next">
-          <div class="card-inner3 py-2 col-lg-12 d-flex justify-content-start gap-3  align-items-center">
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball
-                Pria Wanita...</div>
+          <div class="row justify-content-center gap-3">
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball Pria Wanita...</div>
               <div class="ps-3 py-1 card-price">Rp 129.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan
-                Panjang Atasan...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan Panjang Atasan...</div>
               <div class="ps-3 py-1 card-price">Rp 70.500</div>
               <a href="#" class="ms-3 btn-card">Grosir</a>
               <div class="ps-3 py-1 desc">Jogja</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 2 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 7.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM
-                I9-12900H 16GB...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 7.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM I9-12900H 16GB...</div>
               <div class="ps-3 py-1 card-price">Rp 27.585.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Kota Pare</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 8.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP
-                Camera, Splash...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 8.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP Camera, Splash...</div>
               <div class="ps-3 py-1 card-price">Rp 2.280.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs
-                Cookware Seta...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs Cookware Seta...</div>
               <div class="ps-3 py-1 card-price">Rp 124.900</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM
-                1 Kg</div>
+
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM 1 Kg</div>
               <div class="ps-3 py-1 card-price">Rp 18.500</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-          
-          </div>
-          <div class="card-inner3 py-2 col-lg-12 d-flex justify-content-start gap-3  align-items-center">
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball
-                Pria Wanita...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball Pria Wanita...</div>
               <div class="ps-3 py-1 card-price">Rp 129.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan
-                Panjang Atasan...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan Panjang Atasan...</div>
               <div class="ps-3 py-1 card-price">Rp 70.500</div>
               <a href="#" class="ms-3 btn-card">Grosir</a>
               <div class="ps-3 py-1 desc">Jogja</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 2 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 7.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM
-                I9-12900H 16GB...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 7.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">ASUS ROG STRIX SCAR 15 G533ZM I9-12900H 16GB...</div>
               <div class="ps-3 py-1 card-price">Rp 27.585.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Kota Pare</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 8.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP
-                Camera, Splash...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 8.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Vivo Y22 (6/128) - Helio G85, 50MP Camera, Splash...</div>
               <div class="ps-3 py-1 card-price">Rp 2.280.000</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs
-                Cookware Seta...</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs Cookware Seta...</div>
               <div class="ps-3 py-1 card-price">Rp 124.900</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM
-                1 Kg</div>
+
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM 1 Kg</div>
               <div class="ps-3 py-1 card-price">Rp 18.500</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-          
-          </div>
-          <div class="card-inner3 py-2  col-lg-12 d-flex justify-content-start  gap-3 align-items-center">
-
-            <div class="card-item  col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 5.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Jaket Baseball Varsity Baseball
-                Pria Wanita...</div>
-              <div class="ps-3 py-1 card-price">Rp 129.000</div>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 9.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Panci Set Teflon Marble 13 pcs Cookware Seta...</div>
+              <div class="ps-3 py-1 card-price">Rp 124.900</div>
               <a href="#" class="ms-3 btn-card">Cashback</a>
               <div class="ps-3 py-1 desc">Bekasi</div>
               <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
 
-
-            <div class="card-item col-lg-2">
-              <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 6.png" width="100%" alt="" /></div>
-              <div class="card-title px-3 py-2">Kemeja Flanel Wanita Lengan
-                Panjang Atasan...</div>
-              <div class="ps-3 py-1 card-price">Rp 70.500</div>
-              <a href="#" class="ms-3 btn-card">Grosir</a>
-              <div class="ps-3 py-1 desc">Jogja</div>
-              <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 2 rb+</span> </i>
+            <div class="card-item col-lg-2 col-md-4 col-sm-2 mt-2">
+              <div class="card-img"><img class="img-fluid" src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
+              <div class="card-title px-3 py-2">Gula Pasir GULAKU PRIMEUM 1 Kg</div>
+              <div class="ps-3 py-1 card-price">Rp 18.500</div>
+              <a href="#" class="ms-3 btn-card">Cashback</a>
+              <div class="ps-3 py-1 desc">Bekasi</div>
+              <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
             </div>
-
-
-          
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <!-- Katagory product-3 End -->
 
     <!-- Footer Start -->
@@ -967,7 +893,7 @@
 
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="https://goo.gl/maps/pcsoZREry4SjYXmRA" class="logo d-flex align-items-center">
-              <img src="asset/img/footer.png" width="100%" alt="" />
+              <img src="asset/img/img-homePage/section-home/footer.png" width="100%" alt="" />
             </a>
             <h2 class="text-center">© 2009 - 2023, PT. ShopFrieger.</h2>
           </div>
@@ -994,6 +920,13 @@
 
     <!-- Script Bootstrap-5.3.0  -->
     <script src="asset/js/home.js"></script>
+    <script src="bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.0/js/aos.js"></script>
+    <script src="bootstrap-5.3.0/js/glightbox.min.js"></script>
+    <script src="bootstrap-5.3.0/js/purecounter_vanilla.js"></script>
+    <script src="bootstrap-5.3.0/js/swiper-bundle.min.js"></script>
+    <script src="bootstrap-5.3.0/js/isotope.pkgd.min.js"></script>
+    <script src="bootstrap-5.3.0/js/isotope.pkgd.min.js"></script>
 
     <!-- My Script  -->
     <script src="asset/js/home.js"></script>
