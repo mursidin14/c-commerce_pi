@@ -11,31 +11,88 @@
 }
 
 html {
-  box-sizing: border-box;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-.logo {
-  font-family: 'Alien Encounters';
+nav .btn img {
+  width: 20px;
+}
+
+ nav .navbar-brand {
+  font-family: "Alien Encounters";
   font-weight: 400;
   font-size: 36px;
   color: #2CA367;
+  text-decoration: none;
+}
+nav form {
+  height: 43px;
+  align-items: center;
+}
+ nav .btn {
+   border: none;
+   transform: translateX(10px);
+  }
+  nav .btn .search-img{
+    background: none;
+  }
+
+ nav  .form-control {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  z-index: 1;
+  padding-left: 7%;
+}
+ nav .form-control::placeholder {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+ nav  .form-control:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--hijauMuda);
+  background: transparent;
 }
 
-/* 
-.search-icon {
-  position: absolute;
-} */
+nav .icon button:hover{
+  background: var(--hijauMuda);
+  border-radius: 4px;
+}
+nav .icon button {
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+nav .icon button img  {
+  width: 18px;
+}
+nav .account .profil img  {
+  width: 28px;
+  height: 25px;
+  border: 2px solid var(--span);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
 
-header {
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem ;
-  gap: 5rem;
-  display: flex;
-  flex-direction: row;
+ 
+nav .account button{
+  display: flex;align-items: center;
+  color: #929292;
+  background: none;
+  border: none;
+}
+
+nav .account .btn-daftar{
+  font-weight: bold;
+}
+nav .account .btn-daftar:hover{
+  background: var(--hijauMuda);
+  border-radius: 4px;
+  color: white;
 }
 
 .telusuri {
@@ -290,227 +347,12 @@ input {
   color: #000000;
 }
 
-.card-pesanan {
-  box-sizing: border-box;
-  position: absolute;
-  width: 354px;
-  height: 384px;
-  margin: 0px 0px;
-  left: 64rem;
-  top: 23%;
-  border: 1px solid #A6A6A6;
-  border-radius: 19px;
-}
-
-.card-pesanan p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-  margin-top: 1rem;
-  padding: 5px 2rem;
-}
-
-.jumlah-card {
-  position: absolute;
-  width: 179px;
-  height: 38px;
-  left: 2rem;
-  box-sizing: border-box;
-  border: 1px solid #A6A6A6;
-  border-radius: 5px;
-}
-
-.click-minus button {
-  background-color: transparent;
-  border: none;
-  border-radius: 4px;
-  width: 40px;
-  padding: 4px;
-}
-
-.angka {
-  background-color: transparent;
-  border: none;
-  color: var(--NN950,#212121);
-  font-family: 'Poppins';
-  font-size: 14px;
-  line-height: 18px;
-  position: absolute;
-  outline: none;
-  text-align: center;
-  -webkit-box-flex: 2;
-  top: 10px;
-  left: 0rem;
-}
-
-.tambah-angka {
-  appearance: none;
-  position: absolute;
-  left: 80%;
-}
-
-.total-stok {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0px, 0px, 0px, 0px);
-  border: 0px;
-}
-
-.stok {
-  display: block;
-  position: relative;
-  margin: 0px 0px 0px 0px;
-  text-decoration: initial;
-}
-
-.total-jumlah {
-  position: absolute;
-  left: 78rem;
-  top: 32%;
-}
-
-.maximal {
-  padding: 20px 5px;
-  display: flex;
-  position: absolute;
-  gap: 10px;
-  align-items: center;
-  left: 66rem;
-  top: 18rem;
-  cursor: pointer;
-}
-
-.maximal p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 15px;
-  color: #A6A6A6;
-}
-
-.subtotal {
-  margin: 16px 0px;
-  display: flex;
-  left: 66rem;
-  position: absolute;
-  top: 26rem;
-}
-
-.jumlah-subtotal {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  position: absolute;
-  top: -2rem;
-}
-
-.subtotal-card {
-  display: block;
-  position: relative;
-  font-weight: 400;
-  font-family: 'Poppins';
-  font-size: 1rem;
-  line-height: 18px;
-  letter-spacing: 0px;
-  color: #A6A6A6;
-  text-decoration: initial;
-  margin: 0px;
-}
-
-.harga-card {
-  display: block;
-  position: relative;
-  font-family: "Poppins";
-  letter-spacing: 0px;
-  color: var(--NN950,#212121);
-  text-decoration: initial;
-  margin: 0px 130px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.keranjang-btn {
-  background-color: #2CA367;
-  border: none;
-  border-radius: 8px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  display: block;
-  font-family: 'Poppins';
-  font-size: 1rem;
-  font-weight: 800;
-  height: 40px;
-  line-height: 20px;
-  outline: none;
-  position: relative;
-  left: 66rem;
-  top: -15rem;
-  padding: 0px 16px;
-  text-indent: initial;
-  transition: background-color 300ms ease 0s;
-  width: 18%;
-  margin: 8px 0px;
-}
-
-.keranjang-btn span {
-  display: block;
-  font-size: inherit;
-  opacity: 1;
-  overflow: hidden;
-  position: relative;
-  text-overflow: ellipsis;
-  top: 0px;
-  transition: opacity 300ms linear 0s, top 300ms linear 0s;
-  white-space: nowrap;
-}
-
-.keranjang-btn:hover {
-  background: rgb(123, 249, 178);
-  color: #2CA367;
-  transition: background-color 300ms ease 0s;
-}
-
-.beli-btn {
-  background-color: var(--NN0,#FFFFFF);
-  border: 1px solid var(--GN500,#00AA5B);
-  border-radius: 8px;
-  color: var(--GN500,#00AA5B);
-  cursor: pointer;
-  display: block;
-  font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 1rem;
-  height: 40px;
-  line-height: 20px;
-  outline: none;
-  position: relative;
-  left: 66rem;
-  top: -15rem;
-  padding: 0px 16px;
-  text-indent: initial;
-  transition: background-color 300ms ease 0s;
-  width: 18%;
-}
-
-.beli-btn:hover {
-  background: #00AA5B;
-  color: white;
-}
 
 .account-sosmed {
   border-top: 1px solid #a6a6a6;
   width: 100%;
-  margin: 20px auto;
-  padding: 32px 30px;
+  margin: 180px auto;
+  padding: 40px 30px;
 }
 
 .account-sosmed img {
@@ -545,15 +387,16 @@ input {
   border-radius: 50%;
   box-sizing: border-box;
   position: absolute;
-  top: 54rem;
   left: 9%;
 }
 
 .online {
   display: flex;
   justify-content: center;
-  margin: -58px auto;
+  margin: -55px auto;
   padding-right: 80rem;
+  position: relative;
+  top: 51px;
 }
 
 .online p {
@@ -569,7 +412,7 @@ input {
   position: absolute;
   height: 136px;
   left: 33rem;
-  top: 51rem;
+  top: 55rem;
   border: 1px solid #9F9F9F;
 }
 
@@ -577,7 +420,7 @@ input {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -1rem;
+  top: 50px;
 }
 
 .followers p {
@@ -609,7 +452,7 @@ input {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -91px;
+  top: -23px;
   padding-left: 30rem;
 }
 
@@ -642,7 +485,7 @@ input {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: -163px;
+  top: -6rem;
   right: 7rem;
 }
 
