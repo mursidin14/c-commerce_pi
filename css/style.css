@@ -474,7 +474,7 @@ input {
 }
 
 .keranjang-btn:hover {
-  background: rgb(255, 255, 255);
+  background: rgb(123, 249, 178);
   color: #2CA367;
   transition: background-color 300ms ease 0s;
 }
@@ -576,7 +576,6 @@ input {
 .followers {
   display: flex;
   justify-content: center;
-  margin-right: 10rem;
   position: relative;
   top: -1rem;
 }
@@ -598,6 +597,39 @@ input {
 }
 
 .jumlah-follow p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.following {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -91px;
+  padding-left: 30rem;
+}
+
+.following p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #737373;
+}
+
+.jumlah-following {
+  top: 3rem;
+  display: flex;
+  position: relative;
+  left: -6rem;
+}
+
+.jumlah-following p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
