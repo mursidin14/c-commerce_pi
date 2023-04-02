@@ -251,3 +251,92 @@
   background-color: var(--GN500,#00AA5B);
   color: var(--NN0,#FFFFFF);
 }
+
+.ulasan-fotovideo {
+  margin: 0px 0px 32px;
+}
+
+.css-134nv4k {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.css-p9i78y-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 800;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.css-k008qs {
+  display: flex;
+}
+
+.css-1jg3dar {
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  width: 88px;
+  height: 88px;
+  border: none;
+  padding: 0px;
+}
+
+.css-1jg3dar:not(:last-child) {
+  margin-right: 12px;
+}
+
+.css-bqlp8e {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: initial;
+  height: initial;
+  background: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.css-1w3vjqw {
+  display: block;
+  width: initial;
+  height: initial;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.css-1w3vjqw.intrinsic {
+  max-width: 100%;
+}
+
+.css-io8lqb {
+  display: block;
+  background: none;
+  width: initial;
+  height: initial;
+  max-width: 100%;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
