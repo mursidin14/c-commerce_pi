@@ -2,33 +2,52 @@
   nav form {
     width: 100%;
   }
-  .navbar-brand{
+  .navbar-brand {
     display: none;
   }
-  .account .btn-daftar{
-    display: none;
-  }
-} 
+  
 
+}
+
+/*--------------------------------------------------------------
+/* kategori-Layanan
+--------------------------------------------------------------*/
+.kategori-layanan .card .card-body {
+  display: none;
+}
 
 @media (max-width: 640px) {
-/* -----------------------------------------
+  /* -----------------------------------------
 Header Start 
 ------------------------------------------- */
-nav form {
-  width: 100%!important;
-}
-nav form .btn img{
-  width: 15px;
-}
-.account .btn-daftar{
-  display: none;
-}
-.navbar-brand{
-  display: none;
-
-}
-/*--------------------------------------------------------------
+  nav form {
+    width: 100% !important;
+  }
+  nav form .btn img {
+    width: 15px;
+  }
+  .account .btn-daftar {
+    display: none;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  /*--------------------------------------------------------------
+/* kategori-Layanan
+--------------------------------------------------------------*/
+  .kategori-layanan .card {
+    width: 70px;
+    height: 40px;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 8px;
+    justify-content: center;
+    display: flex;
+  }
+  .kategori-layanan .card .card-body {
+    display: none;
+  }
+  /*--------------------------------------------------------------
 /* kategori-pencarian & kategori-Product-3
 --------------------------------------------------------------*/
 
@@ -41,25 +60,17 @@ nav form .btn img{
 
   .hero .icon-boxes {
     padding-bottom: 60px;
-  } 
-}
-  @media (min-width: 1200px) {
-    /* .hero .icon-boxes:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: calc(50% + 20px);
-      background-color: #fff;
-    }
-    nav form {
-      width: 75%!important;
-    }
-    .navbar-brand{
-      display: block;
-    } */
   }
+}
+@media (min-width: 1200px) {
+  .kategori-layanan .card .card-body {
+    display: block;
+  }
+}
 
-
-
+@media (min-width: 1365px) {
+  .hero {
+    background-attachment: fixed;
+    padding: 40px;
+  }
+}
