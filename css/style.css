@@ -530,3 +530,18 @@ input {
   position: relative;
   margin: 40px 85px;
 }
+
+.kategori-produk {
+  padding: 40px 0;
+  border-bottom: var(--bt);
+  border: 1px solid #D1D1D1;
+}
+
+.judul span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #581e1e;
+}
