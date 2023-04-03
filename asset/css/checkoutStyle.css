@@ -200,27 +200,25 @@ nav .account .btn-daftar:hover {
 .checkout .table tbody th {
   border: none;
 }
-  .footer .footer-links ul li {
-    justify-content: center;
-  }
-  .footer .footer-links .social-links {
-    justify-content: center;
-  }
+.footer .footer-links ul li {
+  justify-content: center;
+}
+.footer .footer-links .social-links {
+  justify-content: center;
+}
 
-  .hero .icon-boxes {
-    padding-bottom: 60px;
-  }
+.hero .icon-boxes {
+  padding-bottom: 60px;
+}
 
+.trolly .table img {
+  width: 20px;
+  height: 20px;
+}
+.img-visa {
+  transform: translate(600%, -130%);
+}
 
-  .trolly .table img {
-    width: 20px;
-    height: 20px;
-  }
-  .img-visa {
-    transform: translate(600%, -130%);
-  }
-
-  
 .checkout .table tbody input {
   transform: translateY(150%);
   height: 24px;
@@ -341,9 +339,9 @@ nav .account .btn-daftar:hover {
   color: #000000;
 }
 
-.checkout .form-select{
-    height: 60px;
-    border: 1px solid #8C8C8C;
+.checkout .form-select {
+  height: 60px;
+  border: 1px solid #8c8c8c;
 }
 .checkout .form-select option {
   font-family: "Poppins";
@@ -405,8 +403,8 @@ nav .account .btn-daftar:hover {
 }
 
 /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
+# Footer
+--------------------------------------------------------------*/
 .footer {
   font-size: 14px;
   background-color: var(--color-primary);
@@ -491,6 +489,7 @@ nav .account .btn-daftar:hover {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .footer .footer-links ul li:first-child {
@@ -535,31 +534,28 @@ nav .account .btn-daftar:hover {
 /* Responsive  */
 
 @media (max-width: 576px) {
-    .img-visa {
-      transform: translate(520%, -125%) !important;
-    }
-    .checkout h1 {
-      font-size: 5px;
-    }
-
-    .checkout .table thead {
-      font-size: 15px;
-    }
-    .checkout .table tbody {
-      font-size: 12px;
-    }
-    .checkout .table img {
-      width: 50px;
-      height: 50px;
-    }
-    .checkmark {
-      top: -10px;
-    }
+  .img-visa {
+    transform: translate(520%, -125%) !important;
+  }
+  .checkout h1 {
+    font-size: 5px;
   }
 
+  .checkout .table thead {
+    font-size: 15px;
+  }
+  .checkout .table tbody {
+    font-size: 12px;
+  }
+  .checkout .table img {
+    width: 50px;
+    height: 50px;
+  }
+  .checkmark {
+    top: -10px;
+  }
 
-
-
-
-
-
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+}
