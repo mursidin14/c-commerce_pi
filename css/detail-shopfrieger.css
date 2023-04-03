@@ -251,3 +251,274 @@
   background-color: var(--GN500,#00AA5B);
   color: var(--NN0,#FFFFFF);
 }
+
+.ulasan-fotovideo {
+  margin: 0px 0px 32px;
+}
+
+.css-134nv4k {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.css-p9i78y-unf-heading {
+  display: block;
+  position: relative;
+  top: 3rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px;
+  left: 2rem;
+}
+
+.css-k008qs {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  left: 2rem;
+}
+
+.css-1jg3dar {
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  width: 88px;
+  height: 88px;
+  border: none;
+  padding: 0px;
+}
+
+.css-1jg3dar:not(:last-child) {
+  margin-right: 12px;
+}
+
+.css-bqlp8e {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: initial;
+  height: initial;
+  background: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.css-1w3vjqw {
+  display: block;
+  width: initial;
+  height: initial;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.css-1w3vjqw.intrinsic {
+  max-width: 100%;
+}
+
+.css-io8lqb {
+  display: block;
+  background: none;
+  width: initial;
+  height: initial;
+  max-width: 100%;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.css-1c345mg {
+  position: absolute;
+  inset: 0px;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: block;
+  padding: 0px;
+  margin: auto;
+  border: none;
+  box-sizing: border-box;
+}
+
+.css-a21zsk {
+  margin: 0px 88px 26px;
+  display: flex;
+  top: 8rem;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.css-1eejott-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px 0px 4px;
+  font-size: 24px;
+}
+
+.css-e84n4s-unf-heading {
+  display: block;
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px;
+}
+
+.css-1w6pe1p {
+  display: flex;
+   -webkit-box-align: center;
+  align-items: center;
+  min-width: 0px;
+}
+
+.css-1w6pe1p > .rating {
+  display: flex;
+  position: relative;
+  left: 86px;
+  top: 8rem;
+  margin-bottom: 2px;
+}
+
+.css-1dfgmtm-unf-heading {
+  display: block;
+  position: relative;
+  left: 7rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: var(--NN600,#6D7588);
+  text-decoration: initial;
+  margin: 0px 0px 0px 4px;
+  top: 8rem;
+}
+
+.css-u2c4jt {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  margin: 175px 88px 4px;
+  font-size: 1rem;
+  color: var(--NN950,#212121);
+  font-weight: bold;
+}
+
+.css-1ck6jvp {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  border: 0px;
+  padding: 0px;
+  height: initial;
+  background: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0px 8px 0px 0px;
+  width: auto;
+}
+
+.css-1w3vjqw.intrinsic {
+  max-width: 100%;
+}
+
+.css-1w3vjqw {
+  display: block;
+  width: initial;
+  height: initial;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.css-2m2ebk {
+  position: absolute;
+  inset: 0px;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: block;
+  padding: 0px;
+  margin: auto;
+  border: none;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.css-u2c4jt .name {
+  display: block;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.css-ed1s1j-unf-heading {
+  width: 444px;
+  height: 46px;
+  display: block;
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-decoration: initial;
+  margin: 0px 88px;
+  color: #000000;
+  top: 1rem;
+  overflow-wrap: break-word;
+}
