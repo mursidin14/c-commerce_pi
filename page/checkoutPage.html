@@ -52,11 +52,38 @@
     </nav>
     <!-- Navbar End  -->
 
-    <section id="trolly" class="trolly">
-      <h1 class="mb-5 fs-1  ">Keranjang Kamu</h1>
+    <section id="checkout" class="checkout">
+      <h1 class="mb-5 fs-1">Checkout</h1>
       <div class="container">
         <div class="row justify-content-lg-between">
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-12 card-item mb-sm-4">
+            <h2 class="p-4">Payment Details</h2>
+            <div class="input-group px-4 mb-3 d-block">
+                <label class="label" for="inputGroupSelect01">Pengantaran</label><br>
+                <select class="form-select rounded-2 w-100" id="inputGroupSelect01">
+                  <option selected>JNE</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            <span class="gr my-3"></span>
+            <div class="card-total d-flex justify-content-between pt-5 align-items-center px-4">
+              <span>Total Harga</span>
+              <span>Rp315.000</span>
+            </div>
+            <div class="card-harga d-flex justify-content-between align-items-center px-4">
+                <span>Subtotal:</span>
+                <span>Rp300.000</span>
+              </div>
+  
+              <div class="card-ongkir d-flex justify-content-between align-items-center px-4 pb-4">
+                <span>Ongkir:</span>
+                <span>Rp15.000</span>
+              </div>
+            <button class="mb-5">Beli</button>
+          </div>
+          <div class="col-lg-6 col-sm-10 mt-lg-0 mt-sm-5">
             <table class="table table-responsive">
               <thead>
                 <tr>
@@ -91,72 +118,8 @@
                   </td>
                   <td class="garis">Rp300.000</td>
                 </tr>
-                <tr>
-                  <th scope="row">
-                    <label class="check">
-                      <input type="checkbox" checked="checked" />
-                      <div class="checkmark"></div>
-                    </label>
-                  </th>
-                  <td class="garis" colspan="2">
-                    <div class="d-flex">
-                      <img src="../asset/img/img-homePage/trolly/product.png" width="50px" alt="" />
-                      <span class="ms-2">Speaker JBL <span style="white-space: nowrap"> Black Kondisi Baru</span></span>
-                    </div>
-                  </td>
-                  <td class="garis">Rp300.000</td>
-                  <td class="garis">
-                    <div class="indikator d-flex align-items-center justify-content-center">
-                      <button>-</button>
-                      <span class="px-2">1</span>
-                      <button>+</button>
-                    </div>
-                  </td>
-                  <td class="garis">Rp300.000</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <label class="check">
-                      <input type="checkbox" checked="checked" />
-                      <div class="checkmark"></div>
-                    </label>
-                  </th>
-                  <td class="garis" colspan="2">
-                    <div class="d-flex">
-                      <img src="../asset/img/img-homePage/trolly/product.png" width="50px" alt="" />
-                      <span class="ms-2">Speaker JBL <span style="white-space: nowrap"> Black Kondisi Baru</span></span>
-                    </div>
-                  </td>
-                  <td class="garis">Rp300.000</td>
-                  <td class="garis">
-                    <div class="indikator d-flex align-items-center justify-content-center">
-                      <button>-</button>
-                      <span class="px-2">1</span>
-                      <button>+</button>
-                    </div>
-                  </td>
-                  <td class="garis">Rp300.000</td>
-                </tr>
               </tbody>
             </table>
-          </div>
-          <div class="col-lg-5 col-12 card-item">
-            <h2 class="p-4">Ringkasan Belanja</h2>
-            <div class="card-harga d-flex justify-content-between align-items-center px-4">
-              <span>Total Harga:</span>
-              <span>Rp300.000</span>
-            </div>
-
-            <div class="card-ongkir d-flex justify-content-between align-items-center px-4 pb-4">
-              <span>Ongkos Kirim:</span>
-              <span>Rp15.000</span>
-            </div>
-            <span class="gr my-3"></span>
-            <div class="card-total d-flex justify-content-between py-5 align-items-center p-4">
-              <span>Total Harga</span>
-              <span>Rp315.000</span>
-            </div>
-            <button class="mb-5">Beli</button>
           </div>
         </div>
       </div>

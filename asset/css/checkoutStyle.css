@@ -1,304 +1,511 @@
 @font-face {
-    font-family: "Alien Encounters";
-    src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
+  font-family: "Alien Encounters";
+  src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  @font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  100% {
+    transform: scale(1.2);
   }
-  @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/static/Montserrat-Regular.ttf);
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
-  
-  :root {
-    --hijauMuda: #03ac0e;
-    --hijauPolos: #2ca367;
-    --putihF4: #f4f4f4;
-    --span: #929292;
-    --bt: 2px solid #d1d1d1;
-  }
-  
-  /* ------------------------------------------^^^^^^^^^^
+}
+
+:root {
+  --hijauMuda: #03ac0e;
+  --hijauPolos: #2ca367;
+  --putihF4: #f4f4f4;
+  --span: #929292;
+  --bt: 2px solid #d1d1d1;
+}
+
+/* ------------------------------------------^^^^^^^^^^
   Navbar Start 
   ----------------------------------------- >>>>>>>>>> */
-  nav .btn img {
-    width: 20px;
-  }
-  nav .navbar-brand {
-    font-family: "Alien Encounters";
-    font-weight: 400;
-    font-size: 36px;
-    color: var(--hijauPolos);
-    text-decoration: none;
-  }
-  nav form {
-    height: 43px;
-    align-items: center;
-  }
-  nav .btn {
-    border: none;
-    transform: translateX(10px);
-  }
-  nav .btn .search-img {
-    background: none;
-  }
-  
-  nav .form-control {
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid #cdcdcd;
-    z-index: 1;
-    padding-left: 7%;
-  }
-  nav .form-control::placeholder {
-    color: #cdcdcd;
-    font-size: 14px;
-  }
-  nav .form-control:focus {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--hijauMuda);
-    background: transparent;
-  }
-  
-  nav .icon button:hover {
-    background: var(--hijauMuda);
-    border-radius: 4px;
-  }
-  nav .icon button {
-    border: none;
-    background: none;
-    transition: 0.3s;
-  }
-  nav .icon button img {
-    width: 18px;
-  }
-  nav .account .profil img {
-    width: 28px;
-    height: 25px;
-    border: 2px solid var(--span);
-    border-radius: 50%;
-    box-sizing: border-box;
-  }
-  
-  nav .account button {
-    display: flex;
-    align-items: center;
-    color: #929292;
-    background: none;
-    border: none;
-  }
-  
-  nav .account .btn-daftar {
-    font-weight: bold;
-  }
-  nav .account .btn-daftar:hover {
-    background: var(--hijauMuda);
-    border-radius: 4px;
-    color: white;
-  }
-  
-  .burger {
-    position: relative;
-    width: 30px;
-    height: 20px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: var(--span);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 22px;
-    left: 5px;
-  }
-  
+nav .btn img {
+  width: 20px;
+}
+nav .navbar-brand {
+  font-family: "Alien Encounters";
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--hijauPolos);
+  text-decoration: none;
+}
+nav form {
+  height: 43px;
+  align-items: center;
+}
+nav .btn {
+  border: none;
+  transform: translateX(10px);
+}
+nav .btn .search-img {
+  background: none;
+}
 
+nav .form-control {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  z-index: 1;
+  padding-left: 7%;
+}
+nav .form-control::placeholder {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+nav .form-control:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--hijauMuda);
+  background: transparent;
+}
 
+nav .icon button:hover {
+  background: var(--hijauMuda);
+  border-radius: 4px;
+}
+nav .icon button {
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+nav .icon button img {
+  width: 18px;
+}
+nav .account .profil img {
+  width: 28px;
+  height: 25px;
+  border: 2px solid var(--span);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
 
+nav .account button {
+  display: flex;
+  align-items: center;
+  color: #929292;
+  background: none;
+  border: none;
+}
 
-  
+nav .account .btn-daftar {
+  font-weight: bold;
+}
+nav .account .btn-daftar:hover {
+  background: var(--hijauMuda);
+  border-radius: 4px;
+  color: white;
+}
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--span);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 5px;
+}
+
 /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+  # checkout
+  --------------------------------------------------------------*/
+.checkout {
+  padding: 40px 20px;
+  border-bottom: var(--bt);
+}
+
+.checkout h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.checkout .table thead {
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.checkout .table tbody th {
+  border: none;
+}
+.checkout .table tbody input {
+  transform: translateY(150%);
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+.checkout .table tbody {
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.checkout .table tbody .indikator {
+  background: #d9d9d9;
+  border-radius: 13.5px;
+}
+.checkout .table tbody .indikator button {
+  background: #d9d9d9;
+  border-radius: 13.5px;
+  border: none;
+}
+.checkout .table img {
+  width: 100px;
+  height: 100px;
+}
+.garis {
+  border-bottom: 1px solid #959595 !important;
+}
+
+/* Hide the default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-radius: 5px;
+}
+
+.check {
+  transform: translateY(160%);
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  box-shadow: 3px 3px 0px rgb(183, 183, 183);
+  transition: all 0.2s;
+  opacity: 1;
+  background-image: linear-gradient(45deg, rgb(100, 61, 219) 0%, rgb(217, 21, 239) 100%);
+}
+
+.check input ~ .checkmark {
+  transition: all 0.2s;
+  opacity: 1;
+  box-shadow: 1px 1px 0px rgb(183, 183, 183);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+.card-item {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 5px solid var(--span);
+  position: relative;
+  box-shadow: 2px 2px 0px rgb(183, 183, 183);
+}
+.card-item h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.checkout .label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.checkout .form-select{
+    height: 50px;
+}
+.checkout .form-select option {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 36px;
+  color: #8c8c8c;
+}
+.checkout .form-select:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--hijauMuda);
+  background: transparent;
+}
+.card-item .gr {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  background: var(--span);
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+.card-harga,
+.card-ongkir {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8c8c8c;
+}
+.card-total {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.card-item button:hover {
+  background-color: #028c0a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+}
+.card-item button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background: #2ca367;
+  width: 90%;
+  margin: 0px 25px;
+}
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
 .footer {
-    font-size: 14px;
-    background-color: var(--color-primary);
-    padding: 50px 0;
-    color: white;
-  }
-  
-  .footer .footer-info .logo {
-    line-height: 0;
-    margin-bottom: 25px;
-  }
-  
-  .footer .footer-info .logo img {
-    margin-right: 6px;
-  }
-  
-  .footer .footer-info .logo span {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #fff;
-    font-family: var(--font-primary);
-  }
-  
-  .footer .footer-info h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-  }
-  
-  .footer .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 10px;
-    transition: 0.3s;
-  }
-  
-  .footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
-  }
-  
-  .footer h4 {
-    position: relative;
-    padding-bottom: 12px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-  }
-  
-  .footer .footer-links {
-    margin-bottom: 30px;
-  }
-  
-  .footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer .footer-links ul i {
-    padding-right: 2px;
-    color: rgba(0, 131, 116, 0.8);
-    font-size: 12px;
-    line-height: 0;
-  }
-  
-  .footer .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer .footer-links ul li:first-child {
-    padding-top: 0;
-  }
-  
-  .footer .footer-links ul a {
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .footer .footer-links ul a:hover {
-    color: var(--bs-indigo);
-  }
-  
-  .footer .footer-contact p {
-    line-height: 26px;
-  }
-  
-  .footer .copyright {
-    text-align: center;
-  }
-  
-  .footer .credits {
-    padding-top: 4px;
-    text-align: center;
-    font-size: 13px;
-  }
-  
-  .footer .credits a {
-    color: #fff;
-  }
-  
+  font-size: 14px;
+  background-color: var(--color-primary);
+  padding: 50px 0;
+  color: white;
+}
+
+.footer .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 25px;
+}
+
+.footer .footer-info .logo img {
+  margin-right: 6px;
+}
+
+.footer .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+.footer .footer-info h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer h4 {
+  position: relative;
+  padding-bottom: 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  color: rgba(0, 131, 116, 0.8);
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--bs-indigo);
+}
+
+.footer .footer-contact p {
+  line-height: 26px;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+.footer .credits {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: #fff;
+}
