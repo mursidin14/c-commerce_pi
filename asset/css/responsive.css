@@ -6,6 +6,52 @@
     display: none;
   }
   
+.trolly h1 {
+  font-size: 20px;
+}
+
+.trolly .table thead {
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.trolly .table tbody th {
+  border: none;
+}
+.trolly .table tbody input {
+  transform: translateY(150%);
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+.trolly .table tbody {
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+.trolly .table tbody .indikator {
+  background: #d9d9d9;
+  border-radius: 13.5px;
+}
+.trolly .table tbody .indikator button {
+  background: #d9d9d9;
+  border-radius: 13.5px;
+  border: none;
+}
+.trolly .table img {
+  width: 20px;
+  height: 20px;
+} 
+  
 
 }
 
@@ -64,8 +110,11 @@ Header Start
 
 
   .trolly .table img {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+  }
+  .img-visa {
+    transform: translateX(-50%);
   }
 }
 @media (min-width: 1200px) {
