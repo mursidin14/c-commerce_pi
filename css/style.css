@@ -525,3 +525,8 @@ input {
   left: 55px;
   top: 1133px;
 }
+
+.gaming {
+  position: relative;
+  margin: 40px 85px;
+}
