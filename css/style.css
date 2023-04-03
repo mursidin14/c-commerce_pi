@@ -534,6 +534,8 @@ input {
 .kategori-produk {
   padding: 40px 0;
   border-bottom: var(--bt);
+  position: relative;
+  top: -33rem;
   border: 1px solid #D1D1D1;
 }
 
