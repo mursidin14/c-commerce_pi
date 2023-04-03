@@ -513,3 +513,15 @@ input {
   line-height: 60px;
   color: #000000;
 }
+
+.ulasan-fotovideo {
+  background: #FFFFFF;
+  border: 1px solid #626262;
+  border-radius: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 871px;
+  height: 698px;
+  left: 55px;
+  top: 1133px;
+}
