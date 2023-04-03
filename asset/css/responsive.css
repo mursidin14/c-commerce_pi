@@ -113,6 +113,9 @@ Header Start
     width: 20px;
     height: 20px;
   }
+  .img-visa {
+    transform: translateX(-50%);
+  }
 }
 @media (min-width: 1200px) {
   .kategori-layanan .card .card-body {

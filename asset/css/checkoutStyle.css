@@ -200,6 +200,27 @@ nav .account .btn-daftar:hover {
 .checkout .table tbody th {
   border: none;
 }
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+  .footer .footer-links .social-links {
+    justify-content: center;
+  }
+
+  .hero .icon-boxes {
+    padding-bottom: 60px;
+  }
+
+
+  .trolly .table img {
+    width: 20px;
+    height: 20px;
+  }
+  .img-visa {
+    transform: translate(600%, -130%);
+  }
+
+  
 .checkout .table tbody input {
   transform: translateY(150%);
   height: 24px;
@@ -321,7 +342,8 @@ nav .account .btn-daftar:hover {
 }
 
 .checkout .form-select{
-    height: 50px;
+    height: 60px;
+    border: 1px solid #8C8C8C;
 }
 .checkout .form-select option {
   font-family: "Poppins";
@@ -509,3 +531,35 @@ nav .account .btn-daftar:hover {
 .footer .credits a {
   color: #fff;
 }
+
+/* Responsive  */
+
+@media (max-width: 576px) {
+    .img-visa {
+      transform: translate(520%, -125%) !important;
+    }
+    .checkout h1 {
+      font-size: 5px;
+    }
+
+    .checkout .table thead {
+      font-size: 15px;
+    }
+    .checkout .table tbody {
+      font-size: 12px;
+    }
+    .checkout .table img {
+      width: 50px;
+      height: 50px;
+    }
+    .checkmark {
+      top: -10px;
+    }
+  }
+
+
+
+
+
+
+
