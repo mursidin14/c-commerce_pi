@@ -679,7 +679,8 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid var(--N75,#E5E7E9);
+  border: 1px solid var(--N75,#E5E7E9);
+  border-radius: 10px;
   cursor: pointer;
 }
 
