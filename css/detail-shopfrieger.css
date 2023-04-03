@@ -522,3 +522,316 @@
   top: 1rem;
   overflow-wrap: break-word;
 }
+
+.css-9zu5v7-unf-heading {
+  display: block;
+  position: relative;
+  top: -43rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+}
+
+.css-gcov66 {
+  width: 228px;
+  margin-right: 52px;
+}
+
+.css-124sv7s {
+  margin: 0px -50px 42px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 69rem;
+  top: -43rem;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.css-1xc3m2i {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.css-1xc3m2i .score-info {
+  line-height: unset !important;
+}
+
+.css-10ifu2i-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: var(--NN600,#6D7588);
+  text-decoration: initial;
+  margin: 0px;
+}
+
+.css-1xc3m2i .score {
+  font-size: 60px;
+  color: var(--NN950,#212121);
+}
+
+.css-1xc3m2i .max-score {
+  font-size: 16px;
+  color: var(--NN600,#6D7588);
+}
+
+.css-1ngblhr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  border: 0px;
+}
+
+.css-g3cl0z-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  font-size: 0.857143rem;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--NN300, rgba(33,33,33.96));
+  text-decoration: initial;
+  margin: 14px 0px 4px;
+}
+
+.css-ypd15i-unf-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.css-ypd15i-unf-tooltip * {
+  cursor: pointer;
+}
+
+.css-zkmnyu {
+  width: 200px;
+  font-size: 0.714286rem;
+  font-weight: 400;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  line-height: 16px;
+  box-shadow: 0 1px 6px 0 var(--color-shadow,rgba(49,53,59,0.12));
+  transition: opacity 300ms ease-in-out 0s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--color-text-high,rgba(49,53,59,0.96));
+  text-align: center;
+  color: var(--N0,#FFFFFF);
+  top: 100%;
+  transform: translate(-50%, calc(0% + 12px));
+}
+
+.css-1h6fhgg {
+  border-radius: 8px;
+  border: 1px solid #1E1E1E;
+  position: relative;
+  left: 69rem;
+}
+
+.css-8ax7ff {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--color-text-high,rgba(49,53,59,0.96));
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.css-1bhobcm-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  font-size: 0.857143rem;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--color-text-low,rgba(49,53,59,0.68));
+  text-decoration: initial;
+  margin: 0px 0px 14px;
+}
+
+.css-1i5ul9s-unf-accordion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid var(--N75,#E5E7E9);
+  cursor: pointer;
+}
+
+.css-1uxx7c7-unf-heading {
+  display: block;
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.1px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px;
+}
+
+.css-1i5ul9s-unf-accordion [data-unf="unf-accordion__header"] {
+  font-size: 14px;
+  padding: 14px;
+}
+
+.css-ll85b2-unf-accordion__header {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 8px 9px 12px;
+  border: none;
+  color: inherit;
+  background-color: var(--color-page-background,#FFFFFF);
+  cursor: pointer;
+  appearance: none;
+}
+
+.css-ll85b2-unf-accordion__header .unf-accordion__drop-icon {
+  border-radius: 12px;
+}
+
+.css-1i5ul9s-unf-accordion [data-unf="unf-accordion__content"] {
+  width: 100%;
+}
+
+.css-1xdqrvt {
+  height: 0px;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition-property: height, opacity, visibility;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.2, 0.64, 0.21, 1);
+}
+
+.css-1i5ul9s-unf-accordion .checkbox {
+  margin: 0px 14px 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.css-1bh52ki {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.css-8wwjx7-unf-checkbox {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.css-1ax9ypr-unf-checkbox__input {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  appearance: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.css-1i85qm8-unf-checkbox__area {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--NN900,#2E3137);
+  border-radius: 4px;
+  vertical-align: middle;
+  position: relative;
+  transition: transform 200ms cubic-bezier(0.2, 0.64, 0.21, 1) 0s;
+  transform-box: fill-box;
+}
+
+.css-e8bjan {
+  display: flex;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 200ms cubic-bezier(0.2, 0.64, 0.21, 1) 0s;
+}
+
+.css-1i5ul9s-unf-accordion .rating-star {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.css-ddj16y-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  font-size: 0.857143rem;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--NN950,#212121);
+  text-decoration: initial;
+  margin: 0px 0px 0px 8px;
+}
+
+.css-1i5ul9s-unf-accordion .checkbox {
+  margin: 0px 14px 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.css-1qltnd6-unf-heading {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-family: "Open Sauce One", "Nunito Sans", -apple-system, sans-serif;
+  font-size: 0.857143rem;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--NN400,#AAB4C8);
+  text-decoration: initial;
+  margin: 0px 0px 0px 8px;
+}
