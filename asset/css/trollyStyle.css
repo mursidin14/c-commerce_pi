@@ -227,9 +227,9 @@ nav .account .btn-daftar:hover {
 .trolly .table img {
   width: 100px;
   height: 100px;
-}
+} 
 .garis {
-  border-bottom: 1px solid #959595;
+  border-bottom: 1px solid #959595!important;
 }
 
 /* Hide the default checkbox */
