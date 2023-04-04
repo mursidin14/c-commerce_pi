@@ -33,9 +33,14 @@
       ----------------------------------------- >>>>>>>>>> */
   nav {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
+    left: 0;right: 0;z-index: 9999;
   }
   nav .btn img {
     width: 20px;
+  }
+  nav .navbar-brand:hover {
+    cursor: pointer;
+    color: #03ac0e;
   }
   nav .navbar-brand {
     font-family: "Alien Encounters";
@@ -43,6 +48,7 @@
     font-size: 36px;
     color: var(--hijauPolos);
     text-decoration: none;
+    transition: all 0.5;
   }
   nav form {
     height: 43px;
