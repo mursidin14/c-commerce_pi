@@ -3,8 +3,8 @@
   border-radius: 8px;
   padding: 0px 12px;
   position: absolute;
-  left: 75rem;
-  top: 10rem;
+  left: 65rem;
+  top: 10rem
 }
 
 .judul-atur {
@@ -253,7 +253,7 @@
 }
 
 .ulasan-fotovideo {
-  margin: 0px 0px 32px;
+  margin: 70px 0px 32px;
 }
 
 .css-134nv4k {
@@ -543,11 +543,11 @@
 }
 
 .css-124sv7s {
-  margin: 0px -50px 42px;
+  margin: 0px 0px 42px;
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 69rem;
+  left: 63rem;
   top: -43rem;
   -webkit-box-align: center;
   align-items: center;
@@ -644,7 +644,7 @@
   border-radius: 8px;
   border: 1px solid #1E1E1E;
   position: relative;
-  left: 69rem;
+  left: 63rem;
 }
 
 .css-8ax7ff {
