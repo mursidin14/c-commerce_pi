@@ -540,43 +540,219 @@ input {
   position: relative;
   margin: 40px 85px;
 }
-
-.kategori-produk {
-  padding: 40px 0;
-  border-bottom: var(--bt);
-  position: relative;
-  top: -33rem;
-  border: 1px solid #D1D1D1;
-}
+*--------------------------------------------------------------
+/* Slider Katagory Produk 2 
+--------------------------------------------------------------*/
 
 .kategori-produk-2 {
   padding: 40px 0;
   border-bottom: var(--bt);
+}
+
+/*--------------------------------------------------------------
+.kategori-Pencarian &
+--------------------------------------------------------------
+.kategori-produk-3 
+----------------------------------------------------------------*/
+
+.kategori-pencarian,
+.kategori-produk-3 {
+  padding: 40px 0;
   position: relative;
-  top: -33rem;
+  top: -35rem;
+  border-bottom: var(--bt);
   border: 1px solid #D1D1D1;
 }
 
-.kategori-produk-3, .kategori-pencarian {
-  padding: 40px 0;
-  border-bottom: var(--bt);
-  position: relative;
-  top: -33rem;
-  border: 1px solid #D1D1D1;
+.kategori-pencarian .card-item,
+.kategori-produk-3 .card-item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  z-index: 9;
+  width: 196px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.kategori-pencarian .card-item .card-img,
+.kategori-produk-3 .card-item .card-img {
+  width: 100%;
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.kategori-pencarian .card-item .card-title,
+.kategori-produk-3 .card-item .card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #000000;
+}
+.kategori-pencarian .card-item .card-price,
+.kategori-produk-3 .card-item .card-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+}
+.kategori-pencarian .card-item .btn-card,
+.kategori-produk-3 .card-item .btn-card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 6px;
+  color: #004b26;
+  padding: 5px 7px;
+  text-decoration: none;
+  background: rgba(0, 255, 56, 0.31);
+  border-radius: 2px;
+}
+.kategori-pencarian .card-item .card-desc,
+.kategori-produk-3 .card-item .card-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
+}
+.kategori-pencarian .card-item i,
+.kategori-produk-3 .card-item i {
+  font-size: 13px;
+}
+.kategori-pencarian .card-item i span,
+.kategori-produk-3 .card-item i span {
+  margin-left: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
 }
 
 .judul span {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  color: #581e1e;
+  color: #2CA367;
 }
 
 .judul a {
   text-decoration: none;
 }
+
+.kategori-produk-4 {
+  padding: 40px 0;
+  position: relative;
+  top: -35rem;
+  border-bottom: var(--bt);
+  border: 1px solid #D1D1D1;
+}
+
+ .card-item,
+.kategori-produk-4 .card-item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  z-index: 9;
+  width: 196px;
+  overflow: hidden;
+  padding: 0;
+}
+
+ .card-item .card-img,
+.kategori-produk-4 .card-item .card-img {
+  width: 100%;
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+ .card-item .card-title,
+.kategori-produk-4 .card-item .card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #000000;
+}
+ .card-item .card-price,
+.kategori-produk-4 .card-item .card-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+}
+ .card-item .btn-card,
+.kategori-produk-4 .card-item .btn-card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 6px;
+  color: #004b26;
+  padding: 5px 7px;
+  text-decoration: none;
+  background: rgba(0, 255, 56, 0.31);
+  border-radius: 2px;
+}
+ .card-item .card-desc,
+.kategori-produk-4 .card-item .card-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
+}
+ .card-item i,
+.kategori-produk-4 .card-item i {
+  font-size: 13px;
+}
+ .card-item i span,
+.kategori-produk-4 .card-item i span {
+  margin-left: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
+}
+
+.judul span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #2CA367;
+}
+
+.judul a {
+  text-decoration: none;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
