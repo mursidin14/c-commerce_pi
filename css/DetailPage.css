@@ -10,10 +10,26 @@
   padding: 0;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+nav {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 nav .btn img {
@@ -159,6 +175,11 @@ input {
   display: flex;
   gap: 10px;
   padding: 115px 20px;
+}
+
+.layanan-hero {
+  position: relative;
+  left: -2rem;
 }
 
 .empatratus {
@@ -375,7 +396,7 @@ input {
   display: flex;
   justify-content: center;
   margin-top: -6rem;
-  padding-right: 58rem;
+  padding-right: 53rem;
 }
 
 .nama-account p {
@@ -398,14 +419,14 @@ input {
   border-radius: 50%;
   box-sizing: border-box;
   position: absolute;
-  left: 11%;
+  left: 14%;
 }
 
 .online {
   display: flex;
   justify-content: center;
   margin: -55px auto;
-  padding-right: 59rem;
+  padding-right: 54rem;
   position: relative;
   top: 51px;
 }
@@ -750,6 +771,13 @@ input {
 
 .judul a {
   text-decoration: none;
+}
+
+.img-fluid {
+  transition: all 0.3s;
+}
+.img-fluid:hover {
+  transform: scale(1.1);
 }
 
 
