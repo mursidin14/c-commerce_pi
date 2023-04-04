@@ -183,13 +183,13 @@
   width: 400px;
   display: flex;
   position: absolute;
-  right: 35px;
-  top: 70.1px;
+  right: 74px;
+  top: 100.1%;
   background: #fff;
   box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
-  padding: 15px 10px;
+  padding: 10px 10px;
   border-radius: 12px;
-  /* visibility: hidden; */
+  visibility: hidden;
   z-index: 999999;
   transition: all 0.3s;
 }
@@ -210,7 +210,12 @@
   color: #31353bad;
 }
 
-.menu-bar img {
+.menu-bar .image {
+  border-radius: 12px 12px 0 0;
+  background: #01cee9;
+  margin: 5px;
+}
+.menu-bar .image img {
   width: 50%;
 }
 
