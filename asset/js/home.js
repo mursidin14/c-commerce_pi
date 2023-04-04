@@ -5,11 +5,12 @@ const btnCard = document.querySelector('.btn-card')
 const caroAktiv = document.querySelector('.carousel-item')
 
 if (trolly) {
-  trolly.addEventListener('click', () => {
-      menuBar.classList.toggle('menuActive');
-      overlay.classList.toggle('overlayActive')
-    });
-    
+  trolly.addEventListener('click', (event) => {
+    event.preventDefault();
+    menuBar.classList.toggle('menuActive');
+    overlay.classList.toggle('overlayActive');
+  });
+}
 //     trolly.addEventListener('mouseenter', () => {
 //         menuBar.classList.add('menuActive');
 //         overlay.classList.toggle('overlayActive')
@@ -19,7 +20,7 @@ if (trolly) {
 //         menuBar.classList.remove('menuActive');
 //         overlay.classList.toggle('overlayActive')
 //   });
-}
+
 
 if (overlay) {
   window.addEventListener('click', (event) => {
