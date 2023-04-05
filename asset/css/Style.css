@@ -25,7 +25,6 @@
   --hijauPolos: #2ca367;
   --putihF4: #f4f4f4;
   --span: #929292;
-  --bt: 2px solid #d1d1d1;
 }
 
 .my-button {
@@ -298,7 +297,7 @@ Hero Start
 .hero {
   width: 100%;
   position: relative;
-  padding: 40px 0;
+  padding: 110px 0  50px 0;
 }
 .hero-container {
   background: linear-gradient(100.95deg, #588157 36.29%, #3a5a40 72.67%, #344e41 106.47%);
@@ -363,7 +362,6 @@ Hero Start
 --------------------------------------------------------------*/
 .kategori-layanan {
   padding: 40px 20px;
-  border-bottom: var(--bt);
 }
 
 .kategori-layanan .card .card-link .card-img-top {
@@ -435,7 +433,6 @@ Hero Start
 --------------------------------------------------------------*/
 .kategori-produk-1 {
   padding: 40px 0;
-  border-bottom: var(--bt);
 }
 .judul h1 {
   font-family: "Poppins";
@@ -577,7 +574,6 @@ Hero Start
 .kategori-pencarian,
 .kategori-produk-3 {
   padding: 40px 0;
-  border-bottom: var(--bt);
 }
 
 .kategori-pencarian .card-item,
@@ -663,7 +659,6 @@ Hero Start
 
 .kategori-produk-2 {
   padding: 40px 0;
-  border-bottom: var(--bt);
 }
 .judul h1 {
   font-family: "Poppins";
@@ -799,7 +794,6 @@ Hero Start
 /* Brand Iklan 2 */
 .brand-iklan {
   padding: 40px 0;
-  border-bottom: var(--bt);
 }
 
 /*--------------------------------------------------------------
