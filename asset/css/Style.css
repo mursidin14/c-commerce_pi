@@ -452,6 +452,11 @@ Hero Start
   color: #581e1e;
 }
 
+.kategori-produk-1 .content {
+  height: 332.99px;
+  display: flex;
+  align-items: center;
+}
 .kategori-produk-1 .card-hero {
   width: 285px;
   height: 333px;
@@ -459,12 +464,10 @@ Hero Start
   background-position: center;
   background-size: cover;
 }
-.kategori-produk-1 .page-next {
-  height: 333px;
+/* .kategori-produk-1 .page-next {
   display: flex;
   align-items: center;
-  padding-top: 20px;
-}
+} */
 .kategori-produk-1 .card-inner {
   position: absolute;
   right: 0;
@@ -1002,6 +1005,10 @@ Hero Start
 @media (max-width: 576px) {
   .footer .footer-links ul li {
     justify-content: center;
+  }
+
+  .card-hilang {
+    display: none;
   }
 
 }
