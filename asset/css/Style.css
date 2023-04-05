@@ -383,7 +383,7 @@ Hero Start
 }
 .kategori-layanan .card {
   border-radius: 50px;
-  transition: all 0.1s ease;
+  transition: all 0.9s ease-out;
 }
 .kategori-layanan .card .card-link:hover {
   color: white;
