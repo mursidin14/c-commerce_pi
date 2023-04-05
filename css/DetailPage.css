@@ -19,6 +19,14 @@
   }
 }
 
+:root {
+  --hijauMuda: #03ac0e;
+  --hijauPolos: #2ca367;
+  --putihF4: #f4f4f4;
+  --span: #929292;
+  --bt: 2px solid #d1d1d1;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -35,27 +43,31 @@ nav {
 nav .btn img {
   width: 20px;
 }
-
- nav .navbar-brand {
+nav .navbar-brand:hover {
+  cursor: pointer;
+  color: #03ac0e;
+}
+nav .navbar-brand {
   font-family: "Alien Encounters";
   font-weight: 400;
   font-size: 36px;
-  color: #2CA367;
+  color: var(--hijauPolos);
   text-decoration: none;
+  transition: all 0.5;
 }
 nav form {
   height: 43px;
   align-items: center;
 }
- nav .btn {
-   border: none;
-   transform: translateX(10px);
-  }
-  nav .btn .search-img{
-    background: none;
-  }
+nav .btn {
+  border: none;
+  transform: translateX(10px);
+}
+nav .btn .search-img {
+  background: none;
+}
 
- nav  .form-control {
+nav .form-control {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -64,17 +76,17 @@ nav form {
   z-index: 1;
   padding-left: 7%;
 }
- nav .form-control::placeholder {
+nav .form-control::placeholder {
   color: #cdcdcd;
   font-size: 14px;
 }
- nav  .form-control:focus {
+nav .form-control:focus {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--hijauMuda);
   background: transparent;
 }
 
-nav .icon button:hover{
+nav .icon button:hover {
   background: var(--hijauMuda);
   border-radius: 4px;
 }
@@ -83,10 +95,10 @@ nav .icon button {
   background: none;
   transition: 0.3s;
 }
-nav .icon button img  {
+nav .icon button img {
   width: 18px;
 }
-nav .account .profil img  {
+nav .account .profil img {
   width: 28px;
   height: 25px;
   border: 2px solid var(--span);
@@ -94,18 +106,18 @@ nav .account .profil img  {
   box-sizing: border-box;
 }
 
- 
-nav .account button{
-  display: flex;align-items: center;
+nav .account button {
+  display: flex;
+  align-items: center;
   color: #929292;
   background: none;
   border: none;
 }
 
-nav .account .btn-daftar{
+nav .account .btn-daftar {
   font-weight: bold;
 }
-nav .account .btn-daftar:hover{
+nav .account .btn-daftar:hover {
   background: var(--hijauMuda);
   border-radius: 4px;
   color: white;
@@ -179,7 +191,7 @@ input {
 
 .layanan-hero {
   position: relative;
-  left: -2rem;
+  left: -1rem;
 }
 
 .empatratus {
