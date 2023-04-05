@@ -688,11 +688,10 @@ Hero Start
   background-position: center;
   background-size: cover;
 }
-.kategori-produk-2 .page-next {
-  height: 333px;
+.kategori-produk-2 .content {
+  height: 332.99px;
   display: flex;
   align-items: center;
-  padding-top: 20px;
 }
 .kategori-produk-2 .card-inner {
   position: absolute;
