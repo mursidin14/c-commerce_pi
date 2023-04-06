@@ -354,6 +354,8 @@ nav .account .btn-daftar:hover {
   line-height: 36px;
   color: #737373;
   transition: all 0.3s ease-out;
+  display: block;
+  text-decoration: none;
 }
 .profile-navbar .profile-follow span {
   font-family: "Poppins";
