@@ -342,14 +342,18 @@ nav .account .btn-daftar:hover {
   border: 1px solid #c8c8c8;
 }
 
-.profile-navbar .profile-follow p {
+.profile-navbar .profile-follow a:hover{
+  cursor: pointer;
+  color: var(--hijauMuda);
+}
+.profile-navbar .profile-follow a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   color: #737373;
+  
 }
 .profile-navbar .profile-follow span {
   font-family: "Poppins";
@@ -509,5 +513,20 @@ nav .account .btn-daftar:hover {
 
   .tengah {
     border-right:none;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #737373;
   }
+  
+  
+.profile-navbar .profile-follow {
+  margin-top: 20px;
+}
+.profile-navbar .profile-follow a {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.profile-navbar .profile-follow span {
+  font-size: 20px;
+}
+
 }
