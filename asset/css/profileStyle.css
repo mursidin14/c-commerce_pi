@@ -298,24 +298,25 @@ nav .account .btn-daftar:hover {
     # profile-navbar
     --------------------------------------------------------------*/
 .profile-navbar {
-    padding: 110px 0px;
+  padding: 110px 0px;
 }
-.profile-navbar .profil-user{
-
-}
-
-.profile-navbar .profil-user h1{
-    
+.profile-navbar .profil-user {
 }
 
-.profile-navbar .profil-user{
-    
+.profile-navbar .profil-user h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.profile-navbar .profil-user{
-    
+.profile-navbar .profil-user h2{
 }
 
+.profile-navbar .profil-user {
+}
 
 /*--------------------------------------------------------------
     # Footer
