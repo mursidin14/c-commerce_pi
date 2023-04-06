@@ -298,9 +298,15 @@ nav .account .btn-daftar:hover {
     # profile-navbar
     --------------------------------------------------------------*/
 .profile-navbar {
-  padding: 110px 0px;
+  padding: 110px 0px 0 0;
 }
 .profile-navbar .container-fluid {
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+.profile-card .container-fluid {
   border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -388,6 +394,9 @@ nav .account .btn-daftar:hover {
 /*--------------------------------------------------------------
     #profile-card
     --------------------------------------------------------------*/
+.profile-card {
+  padding: 20px 0 110px 0;
+}
 .profile-card .card-menu {
   border: 2px solid rgba(0, 0, 0, 0.25);
   background: #ffffff;
@@ -441,8 +450,25 @@ nav .account .btn-daftar:hover {
 .img-fluid:hover {
   scale: 1.2;
 }
+ 
+.profile-card {
+  padding: 50px 0;
+}
 
-.card-item .card-img {
+
+.profile-card .card-item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  z-index: 9;
+  width: 196px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-img,
+.profile-card .card-item .card-img {
   width: 100%;
   height: 163px;
   display: flex;
@@ -451,31 +477,29 @@ nav .account .btn-daftar:hover {
   overflow: hidden;
 }
 
-.card-title {
+.card-title,
+.profile-card .card-item .card-title {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 11px;
-  padding: 10px 0;
-  color: #000000;
-}
-.card-item .card-price {
-  font-family: "Montserrat";
-  font-style: normal;
-  padding: 5px 0 15px 0 ;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 16px;
-  /* identical to box height */
-
+  font-size: 11px;
+  line-height: 11px;
   color: #000000;
 }
-
-.card-item .btn-card {
+ .card-price,
+.profile-card .card-item .card-price {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+}
+ 
+.profile-card .card-item .btn-card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
   font-size: 10px;
   line-height: 6px;
   color: #004b26;
@@ -484,21 +508,21 @@ nav .account .btn-daftar:hover {
   background: rgba(0, 255, 56, 0.31);
   border-radius: 2px;
 }
-
-.card-item .card-desc {
+ .card-desc,
+.profile-card .card-item .card-desc {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 11px;
   color: #676767;
 }
-
-.card-item i {
+ i,
+.profile-card .card-item i {
   font-size: 13px;
 }
-
-.card-item i span {
+ i span,
+.profile-card .card-item i span {
   margin-left: 2px;
   font-family: "Montserrat";
   font-style: normal;
@@ -669,4 +693,7 @@ nav .account .btn-daftar:hover {
   .profile-navbar .profile-follow span {
     font-size: 20px;
   }
+  .footer .footer-links ul li {
+    justify-content: center;
+}
 }
