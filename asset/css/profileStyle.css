@@ -300,9 +300,8 @@ nav .account .btn-daftar:hover {
 .profile-navbar {
   padding: 110px 0px;
 }
-.profile-navbar .profile-user .bg-body {
-  border-left: 2px solid #737373;
-}
+
+.profile-navbar 
 
 .profile-navbar .profile-user h1 {
   font-family: "Poppins";
@@ -350,7 +349,7 @@ nav .account .btn-daftar:hover {
 .profile-navbar .profile-follow a:hover{
   cursor: pointer;
   color: var(--hijauMuda);
-  scale: 1.2;
+  scale: 1.1;
 }
 .profile-navbar .profile-follow a {
   font-family: "Poppins";
@@ -359,7 +358,7 @@ nav .account .btn-daftar:hover {
   font-size: 24px;
   line-height: 36px;
   color: #737373;
-  transition: all 0.3s ease-out;
+  transition: all 0.4s ease-out;
   display: block;
   text-decoration: none;
 }
