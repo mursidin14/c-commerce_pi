@@ -337,6 +337,8 @@ nav .account .btn-daftar:hover {
   font-size: 10px;
   line-height: 15px;
   color: #737373;
+  border-radius: 6px;
+  border: 1px solid #C8C8C8;
 }
 
 /*--------------------------------------------------------------
