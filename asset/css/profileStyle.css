@@ -359,8 +359,8 @@ nav .account .btn-daftar:hover {
     line-height: 60px;
     color: #000000;
 }
-.profile-navbar .profile-follow {
-
+.tengah{
+  border-right: 2px solid #737373;
 }
 /*--------------------------------------------------------------
     # Footer
