@@ -1,296 +1,441 @@
 @font-face {
-    font-family: "Alien Encounters";
-    src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
+  font-family: "Alien Encounters";
+  src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  @font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  100% {
+    transform: scale(1.2);
   }
-  @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/static/Montserrat-Regular.ttf);
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
-  
-  :root {
-    --hijauMuda: #03ac0e;
-    --hijauPolos: #2ca367;
-    --putihF4: #f4f4f4;
-    --span: #929292;
-  }
-  
-  .btn-hero {
-    top: 52%;
-    left: 9%;
-    font-weight: 300;
-    font-size: 10px;
-    text-decoration: none;
-    background-color: var(--bs-indigo);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    display: inline-block;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.5s ease-out;
-  }
-  
-  .btn-hero:hover {
-    background-color: #028c0a;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-  } 
-  
-  
-  .garis-shadow {
-    position: absolute;
-    left: 0;right: 0;bottom: 0;
-    height: 1px;
-    background: #D9D9D9;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  /* ------------------------------------------^^^^^^^^^^
+}
+
+:root {
+  --hijauMuda: #03ac0e;
+  --hijauPolos: #2ca367;
+  --putihF4: #f4f4f4;
+  --span: #929292;
+}
+
+.btn-hero {
+  top: 52%;
+  left: 9%;
+  font-weight: 300;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: var(--bs-indigo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-out;
+}
+
+.btn-hero:hover {
+  background-color: #028c0a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.garis-shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #d9d9d9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------------------------------^^^^^^^^^^
         Navbar Start 
         ----------------------------------------- >>>>>>>>>> */
-        nav {
-          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
-          left: 0;
-          right: 0;
-          z-index: 9999;
-        }
-        nav .btn img {
-          width: 20px;
-        }
-        nav .navbar-brand:hover {
-          cursor: pointer;
-          color: #03ac0e;
-        }
-        nav .navbar-brand {
-          font-family: "Alien Encounters";
-          font-weight: 400;
-          font-size: 36px;
-          color: var(--hijauPolos);
-          text-decoration: none;
-          transition: all 0.5;
-        }
-        nav form {
-          height: 43px;
-          align-items: center;
-        }
-        nav .btn {
-          border: none;
-          transform: translateX(10px);
-        }
-        nav .btn .search-img {
-          background: none;
-        }
-        
-        nav .form-control {
-          background: transparent;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          border: 1px solid #cdcdcd;
-          z-index: 1;
-          padding-left: 7%;
-        }
-        nav .form-control::placeholder {
-          color: #cdcdcd;
-          font-size: 14px;
-        }
-        nav .form-control:focus {
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-          border: 2px solid var(--hijauMuda);
-          outline: none;
-          box-shadow: 0 0 0 2px #028c0a;
-          background: transparent;
-        }
-        
-        nav .icon button:hover {
-          background: var(--hijauMuda);
-          border-radius: 4px;
-        }
-        nav .icon button {
-          border: none;
-          background: none;
-          transition: 0.3s;
-        }
-        nav .icon button img {
-          width: 18px;
-        }
-        nav .account .profil img {
-          width: 28px;
-          height: 25px;
-          border: 2px solid var(--span);
-          border-radius: 50%;
-          box-sizing: border-box;
-        }
-        
-        nav .account button {
-          display: flex;
-          align-items: center;
-          color: #929292;
-          background: none;
-          border: none;
-        }
-        
-        nav .account .btn-daftar {
-          font-weight: bold;
-        }
-        nav .account .btn-daftar:hover {
-          background: var(--hijauMuda);
-          border-radius: 4px;
-          color: white;
-        }
-        
-        .burger {
-          position: relative;
-          width: 30px;
-          height: 20px;
-          background: transparent;
-          cursor: pointer;
-          display: block;
-        }
-        
-        .burger input {
-          display: none;
-        }
-        
-        .burger span {
-          display: block;
-          position: absolute;
-          height: 4px;
-          width: 100%;
-          background: var(--span);
-          border-radius: 9px;
-          opacity: 1;
-          left: 0;
-          transform: rotate(0deg);
-          transition: 0.25s ease-in-out;
-        }
-        
-        .burger span:nth-of-type(1) {
-          top: 0px;
-          transform-origin: left center;
-        }
-        
-        .burger span:nth-of-type(2) {
-          top: 50%;
-          transform: translateY(-50%);
-          transform-origin: left center;
-        }
-        
-        .burger span:nth-of-type(3) {
-          top: 100%;
-          transform-origin: left center;
-          transform: translateY(-100%);
-        }
-        
-        .burger input:checked ~ span:nth-of-type(1) {
-          transform: rotate(45deg);
-          top: 0px;
-          left: 5px;
-        }
-        
-        .burger input:checked ~ span:nth-of-type(2) {
-          width: 0%;
-          opacity: 0;
-        }
-        
-        .burger input:checked ~ span:nth-of-type(3) {
-          transform: rotate(-45deg);
-          top: 22px;
-          left: 5px;
-        }
-        
-        .menu-bar {
-          width: 400px;
-          display: flex;
-          position: absolute;
-          right: 74px;
-          top: -3px;
-          background: #fff;
-          box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
-          padding: 10px 10px;
-          border-radius: 12px;
-          visibility: hidden;
-          z-index: 999999;
-          opacity: 0;
-          transform: translateY(-10px);
-          transition: all 5s ease-out;
-        }
-        
-        .menuActive {
-          visibility: visible;
-          opacity: 1;
-          transform: translateY(0);
-          transition-delay: 0.2s;
-        }
-        .overlay {
-          position: absolute;
-          width: 100%;
-          height: 100vh;
-          display: none;
-          top: 114%;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.5);
-          z-index: 2;
-          cursor: pointer;
-          transition: all 0.3s;
-        }
-        
-        .overlayActive {
-          display: block;
-          transition: all 0.3s;
-        }
-        
-        
-        .menu-bar h4 {
-          font-size: 18px;
-          font-weight: bold;
-        }
-        
-        .menu-bar p {
-          font-size: 14px;
-          color: #31353bad;
-        }
-        
-        .menu-bar .image {
-          border-radius: 12px 12px 0 0;
-          background: #01cee9;
-          margin: 5px;
-        }
-        .menu-bar .image img {
-          width: 50%;
-        }
-        
-        .btn-trolly {
-          background-color: var(--bs-indigo);
-          color: white;
-          border: none;
-          border-radius: 5px;
-          padding: 10px 20px;
-          font-size: 14px;
-          font-weight: bold;
-          
-          transition: all 0.5s ease-out;
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-        }
-        
-        .btn-trolly:hover {
-          background-color: #028c0a;
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-          transform: scale(1.1);
-        }
-        
+nav {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+nav .btn img {
+  width: 20px;
+}
+nav .navbar-brand:hover {
+  cursor: pointer;
+  color: #03ac0e;
+}
+nav .navbar-brand {
+  font-family: "Alien Encounters";
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--hijauPolos);
+  text-decoration: none;
+  transition: all 0.5;
+}
+nav form {
+  height: 43px;
+  align-items: center;
+}
+nav .btn {
+  border: none;
+  transform: translateX(10px);
+}
+nav .btn .search-img {
+  background: none;
+}
+
+nav .form-control {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  z-index: 1;
+  padding-left: 7%;
+}
+nav .form-control::placeholder {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+nav .form-control:focus {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--hijauMuda);
+  outline: none;
+  box-shadow: 0 0 0 2px #028c0a;
+  background: transparent;
+}
+
+nav .icon button:hover {
+  background: var(--hijauMuda);
+  border-radius: 4px;
+}
+nav .icon button {
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+nav .icon button img {
+  width: 18px;
+}
+nav .account .profil img {
+  width: 28px;
+  height: 25px;
+  border: 2px solid var(--span);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+nav .account button {
+  display: flex;
+  align-items: center;
+  color: #929292;
+  background: none;
+  border: none;
+}
+
+nav .account .btn-daftar {
+  font-weight: bold;
+}
+nav .account .btn-daftar:hover {
+  background: var(--hijauMuda);
+  border-radius: 4px;
+  color: white;
+}
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--span);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 5px;
+}
+
+.menu-bar {
+  width: 400px;
+  display: flex;
+  position: absolute;
+  right: 74px;
+  top: -3px;
+  background: #fff;
+  box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 12px;
+  visibility: hidden;
+  z-index: 999999;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 5s ease-out;
+}
+
+.menuActive {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  top: 114%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.overlayActive {
+  display: block;
+  transition: all 0.3s;
+}
+
+.menu-bar h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-bar p {
+  font-size: 14px;
+  color: #31353bad;
+}
+
+.menu-bar .image {
+  border-radius: 12px 12px 0 0;
+  background: #01cee9;
+  margin: 5px;
+}
+.menu-bar .image img {
+  width: 50%;
+}
+
+.btn-trolly {
+  background-color: var(--bs-indigo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: all 0.5s ease-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-trolly:hover {
+  background-color: #028c0a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+    # Footer
+    --------------------------------------------------------------*/
+.footer {
+  font-size: 14px;
+  background-color: var(--color-primary);
+  padding: 50px 0;
+  color: white;
+}
+
+.footer .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 25px;
+}
+
+.footer .footer-info .logo img {
+  margin-right: 6px;
+}
+
+.footer .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+.footer .footer-info h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer h4 {
+  position: relative;
+  padding: 12px 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  color: rgba(0, 131, 116, 0.8);
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--bs-indigo);
+}
+
+.footer .footer-contact p {
+  line-height: 26px;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+.footer .credits {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: #fff;
+}
+
+/* Responsive  */
+
+@media (max-width: 576px) {
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+
+  .card-hilang {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  }
+}
