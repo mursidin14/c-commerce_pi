@@ -300,7 +300,7 @@ nav .account .btn-daftar:hover {
 .profile-navbar {
   padding: 110px 0px ;
 }
-.profile-navbar .profile-user {
+.profile-navbar .profile-user .bg-body{
     border-left: 2px solid #737373;
 }
 
