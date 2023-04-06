@@ -301,7 +301,8 @@ nav .account .btn-daftar:hover {
   padding: 110px 0px;
 }
 .profile-navbar .container-fluid{
-border: 2px solid #D9D9D9;;
+border-top: 2px solid #D9D9D9;
+border-bottom: 2px solid #D9D9D9;
 }
 
 .profile-navbar img {
