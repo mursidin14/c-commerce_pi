@@ -298,9 +298,10 @@ nav .account .btn-daftar:hover {
     # profile-navbar
     --------------------------------------------------------------*/
 .profile-navbar {
-  padding: 110px 0px;
+  padding: 110px 0px ;
 }
 .profile-navbar .profile-user {
+    border-left: 2px solid #737373;
 }
 
 .profile-navbar .profile-user h1 {
@@ -341,9 +342,6 @@ nav .account .btn-daftar:hover {
   border: 1px solid #C8C8C8;
 }
 
-.profile-navbar .profile-follow {
-    border-left: 2px solid #737373;
-}
 .profile-navbar .profile-follow p{
     font-family: 'Poppins';
     font-style: normal;
