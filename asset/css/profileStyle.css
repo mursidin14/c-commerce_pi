@@ -301,7 +301,14 @@ nav .account .btn-daftar:hover {
   padding: 110px 0px;
 }
 
-.profile-navbar 
+.profile-navbar img:hover {
+  transition: all 0.3s ease-out;
+
+  transform: rotateZ(60deg);
+}
+.profile-navbar img:hover {
+  transform: rotateZ(0deg);
+}
 
 .profile-navbar .profile-user h1 {
   font-family: "Poppins";
