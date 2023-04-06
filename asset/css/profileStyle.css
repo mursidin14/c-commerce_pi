@@ -341,6 +341,29 @@ nav .account .btn-daftar:hover {
   border: 1px solid #C8C8C8;
 }
 
+.profile-navbar .profile-follow {
+    border-left: 2px solid #737373;
+}
+.profile-navbar .profile-follow p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #737373;
+}
+.profile-navbar .profile-follow span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+}
+.profile-navbar .profile-follow {
+
+}
 /*--------------------------------------------------------------
     # Footer
     --------------------------------------------------------------*/
