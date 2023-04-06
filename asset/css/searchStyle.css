@@ -187,14 +187,14 @@ nav .account .btn-daftar:hover {
   line-height: 15px;
   color: #000000;
 }
-.kategori .card-item1 ,
- .card-item {
+.kategori .card-item1,
+.card-item {
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
 }
-.kategori .card-item1 h2 ,
- .card-item h2 {
+.kategori .card-item1 h2,
+.card-item h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -202,8 +202,8 @@ nav .account .btn-daftar:hover {
   line-height: 30px;
   color: #000000;
 }
-.kategori .card-item1 h3 ,
- .card-item h3 {
+.kategori .card-item1 h3,
+.card-item h3 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -211,8 +211,8 @@ nav .account .btn-daftar:hover {
   line-height: 30px;
   color: #000000;
 }
-.kategori .card-item1 p ,
- .card-item p {
+.kategori .card-item1 p,
+.card-item p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
@@ -290,14 +290,14 @@ nav .account .btn-daftar:hover {
 }
 
 .product .card-title {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    padding: 10px 0;
-    color: #000000;
-  }
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px 0;
+  color: #000000;
+}
 .product .page-next {
   height: 333px;
   display: flex;
@@ -310,8 +310,8 @@ nav .account .btn-daftar:hover {
   gap: 15px;
 }
 
-.product .card-item ,
- .card-item {
+.product .card-item,
+.card-item {
   border: 0.2px solid rgba(0, 0, 0, 0.2);
   width: 196px;
   background: #ffffff;
@@ -321,8 +321,8 @@ nav .account .btn-daftar:hover {
   overflow: hidden;
 }
 
-.product .card-item .card-img ,
- .card-item .card-img {
+.product .card-item .card-img,
+.card-item .card-img {
   width: 100%;
   height: 163px;
   display: flex;
@@ -331,8 +331,8 @@ nav .account .btn-daftar:hover {
   overflow: hidden;
 }
 
-.product .card-item .card-price ,
- .card-item .card-price {
+.product .card-item .card-price,
+.card-item .card-price {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -341,8 +341,8 @@ nav .account .btn-daftar:hover {
   line-height: 16px;
   color: #000000;
 }
-.product .card-item .btn-card ,
- .card-item .btn-card {
+.product .card-item .btn-card,
+.card-item .btn-card {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
@@ -354,8 +354,8 @@ nav .account .btn-daftar:hover {
   background: rgba(0, 255, 56, 0.31);
   border-radius: 2px;
 }
-.product .card-item .card-desc ,
- .card-item .card-desc {
+.product .card-item .card-desc,
+.card-item .card-desc {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -363,12 +363,12 @@ nav .account .btn-daftar:hover {
   line-height: 11px;
   color: #676767;
 }
-.product .card-item i ,
- .card-item i {
+.product .card-item i,
+.card-item i {
   font-size: 13px;
 }
-.product .card-item i span ,
- .card-item i span {
+.product .card-item i span,
+.card-item i span {
   margin-left: 2px;
   font-family: "Montserrat";
   font-style: normal;
@@ -411,95 +411,92 @@ nav .account .btn-daftar:hover {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236D6D6D'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
-
-
-
 /*--------------------------------------------------------------
     #kategori
     --------------------------------------------------------------*/
-    .etalase {
-        padding: 0px 20px;
-        border-bottom:var(--bt) ;
-      }
-      
-      .card-filter {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 15px;
-        color: #000000;
-      }
-      .etalase .card-item2 {
-        transform: translateY(-60px);
-        background: #ffffff;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 19px;
-      }
-      .etalase .card-item2 h2 ,
-       .card-item h2 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 30px;
-        color: #000000;
-      }
-      .etalase .card-item2 h3 ,
-       .card-item h3 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
-      }
-      .etalase .card-item2 p ,
-       .card-item p {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-      }
-      .etalase .kotak-1 {
-        background: #ffffff;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 19px;
-      }
-      .etalase .kotak-1 .hero {
-        text-align: center;
-      }
-      .etalase .kotak-1 .hero img {
-        width: 100px;
-      }
-      .etalase .kotak-1 .hero h2 {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        padding: 35px 0;
-        color: #000000;
-      }
-      .etalase .kotak-1 .hero a {
-        border: 1px solid #2ca367;
-        color: #2ca367;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: all 0.9;
-      }
-      .etalase .kotak-1 .hero a:hover {
-        background: #03ac0e;
-        border: none;
-        font-weight: bold;
-        color: white;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      }
-       
+.etalase {
+  padding: 0px 20px;
+  border-bottom: var(--bt);
+}
+
+.card-filter {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  color: #000000;
+}
+.etalase .card-item2 {
+  transform: translateY(-60px);
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+.etalase .card-item2 h2,
+.card-item h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+.etalase .card-item2 h3,
+.card-item h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.etalase .card-item2 p,
+.card-item p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.etalase .kotak-1 {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+.etalase .kotak-1 .hero {
+  text-align: center;
+}
+.etalase .kotak-1 .hero img {
+  width: 100px;
+}
+.etalase .kotak-1 .hero h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 35px 0;
+  color: #000000;
+}
+.etalase .kotak-1 .hero a {
+  border: 1px solid #2ca367;
+  color: #2ca367;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.9;
+}
+.etalase .kotak-1 .hero a:hover {
+  background: #03ac0e;
+  border: none;
+  font-weight: bold;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 /*--------------------------------------------------------------
     # Footer
     --------------------------------------------------------------*/
@@ -656,10 +653,9 @@ nav .account .btn-daftar:hover {
     justify-content: center;
   }
   .card-filter,
-  .kategori .card-item1 ,
+  .kategori .card-item1,
   .etalase .card-item2 {
-      text-align: center;
-
+    text-align: center;
   }
   .etalase .card-item2 {
     transform: translateY(0px);
