@@ -300,10 +300,10 @@ nav .account .btn-daftar:hover {
 .profile-navbar {
   padding: 110px 0px;
 }
-.profile-navbar .profil-user {
+.profile-navbar .profile-user {
 }
 
-.profile-navbar .profil-user h1 {
+.profile-navbar .profile-user h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -312,10 +312,17 @@ nav .account .btn-daftar:hover {
   color: #000000;
 }
 
-.profile-navbar .profil-user h2{
+.profile-navbar .profile-user h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--hijauPolos);
+  list-style-type: georgian;
 }
 
-.profile-navbar .profil-user {
+.profile-navbar .profile-user {
 }
 
 /*--------------------------------------------------------------
