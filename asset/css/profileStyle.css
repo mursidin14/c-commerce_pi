@@ -330,7 +330,7 @@ nav .account .btn-daftar:hover {
 }
 
 .profile-navbar .profile-user button:hover{
-  scale: 1.2;
+  scale: 1.1;
 }
 .profile-navbar .profile-user button {
   width: 123px;
@@ -343,7 +343,7 @@ nav .account .btn-daftar:hover {
   color: #737373;
   border-radius: 6px;
   border: 1px solid #c8c8c8;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 
 }
 
