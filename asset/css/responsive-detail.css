@@ -1,25 +1,3 @@
-nav .icon button {
-  border: none;
-  background: none;
-  transition: 0.3s;
-}
-
-nav .icon button img {
-  width: 18px;
-}
-
-nav .account button {
-  display: flex;
-  align-items: center;
-  color: #929292;
-  background: none;
-  border: none;
-}
-
-nav .account .btn-daftar {
-  font-weight: bold;
-}
-
 .burger {
   position: relative;
   width: 30px;
@@ -90,4 +68,12 @@ nav .account .btn-daftar {
   .account .btn-daftar {
     display: none;
 }
+}
+
+
+@media (max-width: 565px) {
+  .card-pesanan {
+    position: fixed;
+    left: 62rem;
+  }
 }
