@@ -329,6 +329,9 @@ nav .account .btn-daftar:hover {
   gap: 6px;
 }
 
+.profile-navbar .profile-user button:hover{
+  scale: 1.2;
+}
 .profile-navbar .profile-user button {
   width: 123px;
   height: 31px;
@@ -340,11 +343,14 @@ nav .account .btn-daftar:hover {
   color: #737373;
   border-radius: 6px;
   border: 1px solid #c8c8c8;
+  transition: all 0.3s ease-out;
+
 }
 
 .profile-navbar .profile-follow a:hover{
   cursor: pointer;
   color: var(--hijauMuda);
+  scale: 1.2;
 }
 .profile-navbar .profile-follow a {
   font-family: "Poppins";
