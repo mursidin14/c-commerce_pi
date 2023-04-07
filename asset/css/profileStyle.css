@@ -230,7 +230,7 @@ nav .account .btn-daftar:hover {
   transition: all 5s ease-out;
 }
 
-#notif-menu {
+.notif-menu {
   width: 400px;
   display: flex;
   position: absolute;
