@@ -294,7 +294,9 @@ nav .account .btn-daftar:hover {
   transform: scale(1.1);
 }
 .notif-menu {
+  overflow-y: auto;
   width: 400px;
+  height: 80vh;
   display: flex;
   position: absolute;
   right: 74px;
