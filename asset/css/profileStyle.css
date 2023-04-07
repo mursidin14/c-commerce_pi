@@ -375,6 +375,9 @@ nav .account .btn-daftar:hover {
   line-height: 18px;
   color: #6d6d6d;
 }
+.notif-menu .about img {
+  padding: 12px 0 27px 0;
+}
 
 /*--------------------------------------------------------------
     # profilnotif-menu
