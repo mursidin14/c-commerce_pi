@@ -421,6 +421,12 @@ nav .account .btn-daftar:hover {
   line-height: 30px;
   color: #000000;
 }
+.profile-card .card-menu p:hover{
+  scale: 1.1;
+  font-weight: bold;
+  color: var(--hijauMuda);
+  cursor: pointer;
+}
 .profile-card .card-menu p {
   font-family: "Poppins";
   font-style: normal;
@@ -428,6 +434,7 @@ nav .account .btn-daftar:hover {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
+  transition: all 0.5s ease-out;
 }
 
 /*--------------------------------------------------------------
