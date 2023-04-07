@@ -326,13 +326,17 @@ nav .account .btn-daftar:hover {
 .notif-menu .image img {
   width: 50%;
 }
+.notif-menu .header {
+  width: 100%;
+}
 .notif-menu .header h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 20px;
   color: #000000;
+  margin: 0;
 }
 .notif-menu .header i {
   color: var(--span);
