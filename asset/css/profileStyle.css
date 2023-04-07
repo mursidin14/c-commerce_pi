@@ -327,24 +327,16 @@ nav .account .btn-daftar:hover {
 .notif-menu .image img {
   width: 50%;
 }
-
-.btn-trolly {
-  background-color: var(--bs-indigo);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-
-  transition: all 0.5s ease-out;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.btn-trolly:hover {
-  background-color: #028c0a;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+.notif-menu .header h1{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+} 
+.notif-menu .image img {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------
