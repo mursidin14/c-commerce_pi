@@ -302,7 +302,7 @@ nav .account .btn-daftar:hover {
   right: 74px;
   top: -3px;
   background: #fff;
-  box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px  20px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   z-index: 999999;
   /* opacity: 0; */
