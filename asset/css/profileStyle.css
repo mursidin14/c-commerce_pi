@@ -376,12 +376,17 @@ nav .account .btn-daftar:hover {
   line-height: 18px;
   color: #6d6d6d;
 }
+.notif-menu  a:hover{
+  scale: 1.1;
+  color: #03ac0e;
+}
 .notif-menu  a {
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 15px;
 line-height: 18px;
+transition: all 0.3s ease-in-out;
 text-decoration: none;
 color: #2CA367;
 }
