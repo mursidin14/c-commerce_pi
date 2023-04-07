@@ -361,6 +361,7 @@ nav .account .btn-daftar:hover {
   color: #6D6D6D;
 }
 .notif-menu .about h1 {
+  padding: 10px 0;
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -368,7 +369,9 @@ font-size: 20px;
 line-height: 12px;
 color: #000000;
 }
-.notif-menu .about p {}
+.notif-menu .about p {
+  
+}
 
 
 /*--------------------------------------------------------------
