@@ -237,11 +237,11 @@ nav .account .btn-daftar:hover {
   transform: translateY(0);
   transition-delay: 0.2s;
 }
-.over {
+/* .over {
   position: absolute;
   width: 100%;
   height: 100vh;
-  /* display: none; */
+  /* display: none; 
   top: 114%;
   left: 0;
   right: 0;
@@ -250,7 +250,7 @@ nav .account .btn-daftar:hover {
   z-index: 2;
   cursor: pointer;
   transition: all 0.3s;
-}
+} */
 
 .overlay , .over {
   position: absolute;
