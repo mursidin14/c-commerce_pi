@@ -348,36 +348,33 @@ nav .account .btn-daftar:hover {
 .notif-menu .about {
   padding: 20px 20px;
   width: 100%;
-
 }
 
-.notif-menu .about span
-{
-  font-family: 'Montserrat';
+.notif-menu .about span {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 7px;
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 .notif-menu .about h1 {
   padding: 10px 0;
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 12px;
-color: #000000;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 12px;
+  color: #000000;
 }
 .notif-menu .about p {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 18px;
-color: #6D6D6D;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6d6d6d;
 }
-
 
 /*--------------------------------------------------------------
     # profilnotif-menu
