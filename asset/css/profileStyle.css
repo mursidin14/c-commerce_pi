@@ -237,26 +237,11 @@ nav .account .btn-daftar:hover {
   transform: translateY(0);
   transition-delay: 0.2s;
 }
-/* .over {
+.overlay  {
   position: absolute;
   width: 100%;
   height: 100vh;
-  /* display: none; 
-  top: 114%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  cursor: pointer;
-  transition: all 0.3s;
-} */
-
-.overlay , .over {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: none;
+  display: block;
   top: 114%;
   left: 0;
   right: 0;
@@ -309,9 +294,61 @@ nav .account .btn-daftar:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
+.notif-menu {
+  width: 400px;
+  display: flex;
+  position: absolute;
+  right: 74px;
+  top: -3px;
+  background: #fff;
+  box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 12px;
+  z-index: 999999;
+  /* opacity: 0; */
+  transform: translateY(-10px);
+  /* transition: all 5s ease-out; */
+}
+.notif-menu h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.notif-menu p {
+  font-size: 14px;
+  color: #31353bad;
+}
+
+.notif-menu .image {
+  border-radius: 12px 12px 0 0;
+  background: #01cee9;
+  margin: 5px;
+}
+.notif-menu .image img {
+  width: 50%;
+}
+
+.btn-trolly {
+  background-color: var(--bs-indigo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: all 0.5s ease-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-trolly:hover {
+  background-color: #028c0a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
 
 /*--------------------------------------------------------------
-    # profile-navbar
+    # profilnotif-menu
     --------------------------------------------------------------*/
 .profile-navbar {
   padding: 110px 0px 0 0;
