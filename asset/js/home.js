@@ -1,7 +1,6 @@
-const btnNotif = document.querySelector('#notif');
 const btnTrolly = document.querySelector('#trolly');
+const btnNotif = document.querySelector('#notif');
 const btnMessage = document.querySelector('#message');
-const btnCard = document.querySelector('.btn-card')
 
 const trollyForm = document.querySelector('.trolly-menu');
 if (btnTrolly) {
@@ -15,10 +14,17 @@ if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
     notifMenu.classList.toggle('notifActive');
-    overlay.classList.add('overlayActive');
+   
   });
 }
-  const messageForm = document.querySelector('.message-menu');
+const messageForm = document.querySelector('.message-menu');
+if (btnMessage) {
+  btnMessage.addEventListener('click', (event) => {
+    event.preventDefault();
+    notifMenu.classList.toggle('notifActive');
+   
+  });
+}
 
 if (overlay) {
   window.addEventListener('click', (event) => {
