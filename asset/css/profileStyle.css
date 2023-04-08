@@ -407,6 +407,7 @@ nav .account .btn-daftar:hover {
 /* message notif start  */
 .message-menu {
   width: 250px;
+
   height: 260px;
   display: flex;
   position: absolute;
