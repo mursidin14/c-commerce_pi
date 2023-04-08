@@ -26,16 +26,16 @@
   </head>
   <body>
     <!-- Navbar Start  -->
-    <nav class="navbar justify-content-center bg-white">
-      <div class="container-fluid row gap-lg-1 justify-content-center">
+    <nav class="navbar position-fixed justify-content-center bg-white">
+      <div class="container-fluid position-relative row gap-lg-1 justify-content-center">
         <a class="navbar-brand col-2 d-none d-lg-block">Shopfrieger</a>
         <form class="d-flex col-12 col-lg-9 col-md-10 position-relative" role="search">
-          <button class="btn position-absolute btn-outline-success" type="submit"><img class="search-img" src="../asset/img/search.png" alt="" /></button>
-          <input class="form-control ms-2" type="search" placeholder="Cari di Shopfrieger" aria-label="Search" />
+          <button class="btn position-absolute btn-outline-success" type="submit"><img class="search-img" src="../asset/img/img-homePage/section-home/search.png" alt="" /></button>
+          <input class="form-control ms-2" type="search" placeholder="RTX 3080 TI" aria-label="Search" />
           <div class="d-flex icon ms-lg-3 gap-2 align-items-center">
-            <button><img src="../asset/img/trolly.png" alt="" /></button>
-            <button><img src="../asset/img/notif.png" alt="" /></button>
-            <button><img src="../asset/img/message.png" alt="" /></button>
+            <button id="trolly"><img src="../asset/img/img-homePage/section-home/trolly.png" alt="" /></button>
+            <button id="notif"><img src="../asset/img/img-homePage/section-home/notif.png" alt="" /></button>
+            <button id="message"><img src="../asset/img/img-homePage/section-home/message.png" alt="" /></button>
           </div>
           <div class="d-flex account ms-2 gap-2 align-items-center">
             <button class="profil"><img src="../asset/img/img-homePage/section-home/account.png" alt="" /></button>
@@ -48,6 +48,52 @@
             </label>
           </div>
         </form>
+        <!-- bagian Menu start  -->
+          <div id="trolly-menu" class=" trolly-menu flex-column justify-content-between align-items-center">
+            <div class="image text-center">
+              <img src="../asset/img/img-homePage/trolly/pin (2).jpg" alt="" />
+            </div>
+            <h4>Wah keranjang belanjaan kamu kosong</h4>
+            <p class="text-center">
+              Daripada dianggurin, mending diisi dengan barang barang <br />
+              impianmu. Yuk cek sekarang!
+            </p>
+            <button class="btn-trolly">Lihat Rekomendasi</button>
+          </div>
+          <div id="notif-menu" class="notif-menu  d-none justify-content-start align-items-center">
+            <div class="d-flex header align-items-center justify-content-between">
+              <h1>Notifikasi</h1>
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <div class="about p-4">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+              <img class="py-3" src="../asset/img/img-homePage/trolly/brand-notif.png" width="100%" alt="" />
+            </div>
+            <div class="about p-4 bg-primary-subtle ">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+            </div>
+            <div class="about mt-3 p-4 bg-primary-subtle shadow">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+            </div>
+            <div class="d-flex mt-3 p-4 justify-content-between align-items-center w-100" >
+              <a href="#" >Tandai semua dibaca</a >
+              <a href="#" >Lihat Selengkapnya</a >
+            </div>
+          </div>
+           <div id="message-menu" class=" message-menu d-none flex-column justify-content-between align-items-start">
+           <a href="#">Chat</a>
+           <a href="#">Diskusi</a>
+           <a href="#">Ulasan</a>
+           <a href="#">Pesan Bantuan</a>
+           <a href="#">Pesanan Dikomplain</a>
+          </div>
+        <!-- Notif-menu  -->
       </div>
     </nav>
     <!-- Navbar End  -->
@@ -235,5 +281,6 @@
         </div> -->
     </footer>
     <!-- Footer End -->
+    <script src="../asset/js/home.js"></script>
   </body>
 </html>
