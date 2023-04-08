@@ -34,13 +34,10 @@ if (btnMessage) {
    
   });
 }
+  window.addEventListener('click', () => {
+    messageForm.classList.add('d-none');
+    trollyForm.classList.remove('active');
+    notifForm.classList.add('d-none');
+  });
 
-// if (overlay) {
-//   window.addEventListener('click', (event) => {
-//       if (!event.target.closest('.menu-bar') && !event.target.closest('#trolly')) {
-//         menuBar.classList.remove('menuActive');
-//         overlay.classList.remove('overlayActive');
-//       }
-//   });
-// }
 
