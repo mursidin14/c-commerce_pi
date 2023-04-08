@@ -7,8 +7,8 @@ if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
     trollyForm.classList.toggle('active');
-    messageForm.classList.remove('active');
-    notifForm.classList.toggle('d-none');
+    messageForm.classList.add('d-none');
+    notifForm.classList.add('d-none');
   });
 }
 const notifForm = document.getElementById('notif-menu');
@@ -19,7 +19,7 @@ if (btnNotif) {
     event.preventDefault();
     notifForm.classList.toggle('d-none');
     trollyForm.classList.remove('active');
-    messageForm.classList.remove('active');
+    messageForm.classList.add('d-none');
    
   });
   }
@@ -28,10 +28,9 @@ const messageForm = document.querySelector('.message-menu');
 if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
-    alert('daasasfsa')
     messageForm.classList.toggle('d-none');
     trollyForm.classList.remove('active');
-    notifForm.classList.remove('active');
+    notifForm.classList.add('d-none');
    
   });
 }

@@ -414,7 +414,7 @@ nav .account .btn-daftar:hover {
   right: 74px;
   top: -3px;
   background: #fff;
-  box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 20px  rgba(0, 0, 0, 0.1);
   padding: 10px 10px;
   border-radius: 12px;
   z-index: 999999;
@@ -422,6 +422,9 @@ nav .account .btn-daftar:hover {
   transition: all 5s ease-out;
 }
 
+.message-menu a:hover{
+  color: var(--hijauMuda);
+}
 .message-menu a {
   font-family: "Montserrat";
   font-style: normal;
