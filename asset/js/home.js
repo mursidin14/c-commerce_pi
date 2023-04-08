@@ -11,12 +11,12 @@ if (btnTrolly) {
     notifForm.classList.remove('active');
   });
 }
-const notifForm = document.querySelector('.notif-menu');
+const notifForm = document.querySelector('#notif-menu');
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
     alert('daasasfsa')
-    // notifForm.classList.toggle('active');
+    notifForm.classList.toggle('active');
     // trollyForm.classList.remove('active');
     // messageForm.classList.remove('active');
    
@@ -34,17 +34,12 @@ if (btnMessage) {
   });
 }
 
-if (overlay) {
-  window.addEventListener('click', (event) => {
-      if (!event.target.closest('.menu-bar') && !event.target.closest('#trolly')) {
-        menuBar.classList.remove('menuActive');
-        overlay.classList.remove('overlayActive');
-      }
-  });
-}
+// if (overlay) {
+//   window.addEventListener('click', (event) => {
+//       if (!event.target.closest('.menu-bar') && !event.target.closest('#trolly')) {
+//         menuBar.classList.remove('menuActive');
+//         overlay.classList.remove('overlayActive');
+//       }
+//   });
+// }
 
-
-// btnCard.addEventListener('click', () => {
-//   caroAktiv.classList.toggle('active');
-//   alert('daddad')
-// })
