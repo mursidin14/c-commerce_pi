@@ -8,7 +8,7 @@ if (btnTrolly) {
     event.preventDefault();
     trollyForm.classList.toggle('active');
     messageForm.classList.remove('active');
-    notifForm.classList.remove('active');
+    notifForm.classList.remove('d-none');
   });
 }
 const notifForm = document.getElementById('notif-menu');
