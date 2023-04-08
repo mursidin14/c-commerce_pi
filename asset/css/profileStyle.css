@@ -119,6 +119,7 @@ nav .form-control:focus {
 nav .icon button:hover {
   background: var(--hijauMuda);
   border-radius: 4px;
+  cursor: alias;
 }
 nav .icon button {
   border: none;
