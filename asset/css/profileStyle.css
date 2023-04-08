@@ -415,10 +415,10 @@ nav .account .btn-daftar:hover {
   box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
   padding: 10px 10px;
   border-radius: 12px;
-  visibility: visible;
+  visibility: hidden;
   z-index: 999999;
-  opacity: 1;
-  transform: translateY(50px);
+  opacity: 0;
+  transform: translateY(70px);
   transition: all 5s ease-out;
 }
 
