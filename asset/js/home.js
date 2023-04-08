@@ -6,14 +6,14 @@ const trollyForm = document.querySelector('.trolly-menu');
 if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
-    menuBar.classList.toggle('menuActive');
+    trollyForm.classList.toggle('active');
   });
 }
 const notifForm = document.querySelector('.notif-menu');
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
-    notifMenu.classList.toggle('notifActive');
+    no.classList.toggle('notifActive');
    
   });
 }
