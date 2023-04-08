@@ -403,6 +403,27 @@ color: #2CA367;
   background-color: #ddd;
 }
 
+/* message notif start  */
+.message-menu {
+  width: 400px;
+  display: flex;
+  position: absolute;
+  right: 74px;
+  top: -3px;
+  background: #fff;
+  box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 12px;
+  visibility: hidden;
+  z-index: 999999;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 5s ease-out;
+
+}
+
+
+
 /*--------------------------------------------------------------
     # profilnotif-menu
     --------------------------------------------------------------*/
