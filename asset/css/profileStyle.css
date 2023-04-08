@@ -278,7 +278,7 @@ nav .account .btn-daftar:hover {
   overflow-y: auto;
   width: 400px;
   height: 80vh;
-  display: none;
+  display: block;
   position: absolute;
   right: 74px;
   top: -3px;

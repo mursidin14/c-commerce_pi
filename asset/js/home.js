@@ -15,9 +15,10 @@ const notifForm = document.querySelector('.notif-menu');
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
-    notifForm.classList.toggle('active');
-    trollyForm.classList.remove('active');
-    messageForm.classList.remove('active');
+    alert('daasasfsa')
+    // notifForm.classList.toggle('active');
+    // trollyForm.classList.remove('active');
+    // messageForm.classList.remove('active');
    
   });
 }
@@ -25,6 +26,7 @@ const messageForm = document.querySelector('.message-menu');
 if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
+    alert('daasasfsa')
     messageForm.classList.toggle('active');
     trollyForm.classList.remove('active');
     notifForm.classList.remove('active');
