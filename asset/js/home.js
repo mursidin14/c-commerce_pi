@@ -7,13 +7,17 @@ if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
     trollyForm.classList.toggle('active');
+    trollyForm.classList.toggle('active');
+    trollyForm.classList.toggle('active');
   });
 }
 const notifForm = document.querySelector('.notif-menu');
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
-    no.classList.toggle('notifActive');
+    notifForm.classList.toggle('active');
+    notifForm.classList.toggle('active');
+    notifForm.classList.toggle('active');
    
   });
 }
@@ -21,7 +25,9 @@ const messageForm = document.querySelector('.message-menu');
 if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
-    notifMenu.classList.toggle('notifActive');
+    messageForm.classList.toggle('active');
+    trollyForm.classList.toggle('active');
+    notifForm.classList.toggle('active');
    
   });
 }
