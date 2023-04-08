@@ -422,6 +422,37 @@ color: #2CA367;
 
 }
 
+.message-menu h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message-menu p {
+  font-size: 14px;
+  color: #31353bad;
+}
+
+.message-menu .image {
+  border-radius: 12px 12px 0 0;
+  background: #01cee9;
+  margin: 5px;
+}
+.message-menu .image img {
+  width: 50%;
+}
+
+.btn-trolly {
+  background-color: var(--bs-indigo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: all 0.5s ease-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
 
 
 /*--------------------------------------------------------------
