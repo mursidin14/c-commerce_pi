@@ -1,17 +1,17 @@
-const menuBar = document.querySelector('.menu-bar');
-const notifMenu = document.querySelector('.notif-menu');
 const notif = document.querySelector('#notif');
 const trolly = document.querySelector('#trolly');
 const overlay = document.querySelector('.overlay')
 const btnCard = document.querySelector('.btn-card')
 const caroAktiv = document.querySelector('.carousel-item')
 
+const  = document.querySelector('.menu-bar');
 if (trolly) {
   trolly.addEventListener('click', (event) => {
     event.preventDefault();
     menuBar.classList.toggle('menuActive');
   });
 }
+const notifForm = document.querySelector('.notif-menu');
 if (notif) {
   notif.addEventListener('click', (event) => {
     event.preventDefault();
@@ -19,6 +19,7 @@ if (notif) {
     overlay.classList.add('overlayActive');
   });
 }
+  const messageForm = document.querySelector('.notif-menu');
 
 if (overlay) {
   window.addEventListener('click', (event) => {
