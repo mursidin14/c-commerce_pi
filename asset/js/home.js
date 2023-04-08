@@ -16,7 +16,7 @@ if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
     alert('daasasfsa')
-    notifForm.classList.toggle('active');
+    notifForm.classList.toggle('d-none');
     // trollyForm.classList.remove('active');
     // messageForm.classList.remove('active');
    
