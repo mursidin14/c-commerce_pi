@@ -291,12 +291,6 @@ nav .account .btn-daftar:hover {
   /* transition: all 5s ease-out; */
 }
 
-.notifActive {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s;
-}
 .notif-menu h4 {
   font-size: 18px;
   font-weight: bold;
