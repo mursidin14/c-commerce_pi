@@ -7,8 +7,8 @@ if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
     trollyForm.classList.toggle('active');
-    messageForm.classList.toggle('active');
-    notifForm.classList.toggle('active');
+    messageForm.classList.remove('active');
+    notifForm.classList.remove('active');
   });
 }
 const notifForm = document.querySelector('.notif-menu');
@@ -16,8 +16,8 @@ if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
     notifForm.classList.toggle('active');
-    trollyForm.classList.toggle('active');
-    messageForm.classList.toggle('active');
+    trollyForm.classList.remove('active');
+    messageForm.classList.remove('active');
    
   });
 }
@@ -26,8 +26,8 @@ if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
     messageForm.classList.toggle('active');
-    trollyForm.classList.toggle('active');
-    notifForm.classList.toggle('active');
+    trollyForm.classList.remove('active');
+    notifForm.classList.remove('active');
    
   });
 }
