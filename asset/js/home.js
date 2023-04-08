@@ -1,7 +1,7 @@
 const menuBar = document.querySelector('.menu-bar');
 const notifMenu = document.querySelector('.notif-menu');
-const trolly = document.querySelector('#trolly');
 const notif = document.querySelector('#notif');
+const trolly = document.querySelector('#trolly');
 const overlay = document.querySelector('.overlay')
 const btnCard = document.querySelector('.btn-card')
 const caroAktiv = document.querySelector('.carousel-item')
@@ -10,7 +10,6 @@ if (trolly) {
   trolly.addEventListener('click', (event) => {
     event.preventDefault();
     menuBar.classList.toggle('menuActive');
-    overlay.classList.add('overlayActive');
   });
 }
 if (notif) {

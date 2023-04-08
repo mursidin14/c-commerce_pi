@@ -213,7 +213,7 @@ nav .account .btn-daftar:hover {
   left: 5px;
 }
 
-.menu-bar {
+.trolly-menu {
   width: 400px;
   display: flex;
   position: absolute;
@@ -237,22 +237,22 @@ nav .account .btn-daftar:hover {
   transition-delay: 0.2s;
 }
 
-.menu-bar h4 {
+.trolly-menu h4 {
   font-size: 18px;
   font-weight: bold;
 }
 
-.menu-bar p {
+.trolly-menu p {
   font-size: 14px;
   color: #31353bad;
 }
 
-.menu-bar .image {
+.trolly-menu .image {
   border-radius: 12px 12px 0 0;
   background: #01cee9;
   margin: 5px;
 }
-.menu-bar .image img {
+.trolly-menu .image img {
   width: 50%;
 }
 
