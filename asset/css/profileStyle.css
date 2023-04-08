@@ -227,14 +227,13 @@ nav .account .btn-daftar:hover {
   visibility: hidden;
   z-index: 999999;
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(70px);
   transition: all 5s ease-out;
 }
 
 .active {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
   transition-delay: 0.2s;
 }
 
