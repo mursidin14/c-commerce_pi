@@ -7,8 +7,8 @@ const ovrNotif = document.querySelector('.ovr-notif');
 const ovrMessage = document.querySelector('.ovr-message');
 const overlay = document.querySelectorAll('.overlay');
 
-ovrTrolly.addEventListener('click', () => {
-  alert('dsd')
+overlay.addEventListener('click', () => {
+  alert('dadgba')
 })
 // Add event listeners
 if (btnTrolly) {
@@ -37,8 +37,3 @@ if (btnMessage) {
     ovrNotif.classList.add('d-none');
   });
 }
-
-// Add global click event listener
-window.addEventListener('click', () => {
-  overlay.classList.add('d-none')
-});
