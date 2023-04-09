@@ -27,11 +27,6 @@
   --bt: 2px solid #d1d1d1;
 }
 
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
 nav {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
@@ -40,20 +35,41 @@ nav {
   z-index: 9999;
 }
 
+.my-button {
+  top: 52%;
+  left: 9%;
+  font-weight: 300;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: var(--bs-indigo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease;
+}
+
+.my-button:hover {
+  background-color: #028c0a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/* ------------------------------------------^^^^^^^^^^
+Navbar Start 
+----------------------------------------- >>>>>>>>>> */
 nav .btn img {
   width: 20px;
 }
-nav .navbar-brand:hover {
-  cursor: pointer;
-  color: #03ac0e;
-}
+
 nav .navbar-brand {
   font-family: "Alien Encounters";
   font-weight: 400;
   font-size: 36px;
   color: var(--hijauPolos);
   text-decoration: none;
-  transition: all 0.5;
 }
 nav form {
   height: 43px;
@@ -123,15 +139,71 @@ nav .account .btn-daftar:hover {
   color: white;
 }
 
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--span);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 5px;
+}
+
 .hero {
   width: 100%;
   position: relative;
   padding: 40px 0;
-}
-.hero-container {
-  background: linear-gradient(100.95deg, #588157 36.29%, #3a5a40 72.67%, #344e41 106.47%);
-  border-radius: 25px;
-  padding: 60px 0 60px 0;
+  padding-top: 5rem;
 }
 
 .telusuri {
@@ -183,626 +255,229 @@ input {
   margin-bottom: 0rem;
 }
 
-.halaman-pertama {
-  display: flex;
-  gap: 10px;
-  padding: 115px 20px;
-}
+/* Hero */
 
-.layanan-hero {
-  position: relative;
-  left: -1rem;
-}
-
-.empatratus {
+.hero-content h1 {
   font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 22px;
-  color: #8A8A8A;
-  position: absolute;
-  top: 50px;
-  left: 5rem;
-}
-
-.head-beam {
-  padding: 10px 20px;
-  gap: 5rem;
-  display: flex;
-  position: absolute;
-  left: 2px;
-  top: 645px;
-}
-
-.lightweight {
-  padding: 10px 20px;
-  gap: 5rem;
-  display: flex;
-  position: absolute;
-  left: 7rem;
-  top: 645px;
-}
-
-.color-breathing {
-  padding: 10px 20px;
-  gap: 5rem;
-  display: flex;
-  position: absolute;
-  left: 14rem;
-  top: 645px;
-}
-
-#rating {
-  display: flex;
-  gap: 10px;
-  padding-inline: 9rem;
-  margin-top: -9%;
-}
-
-.text-hero {
-  display: inline-block;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  position: absolute;
-  top: 11rem;
-  left: 33rem;
+  line-height: 30px;
+  color: #000000;
 }
 
-.jumlah-rating {
-  font-size: 15px;
-  display: flex;
-  line-height: 22px;
-  justify-content: center;
-  margin-top: -1rem;
-  padding-left: 2rem;
-}
-
-#harga {
-  font-size: 32px;
-  line-height: 48px;
-}
-
-.rincian {
-  border: 1px solid #DDDDDD;
-  position: absolute;
-  width: 432.5px;
-  height: 0px;
-  left: 525.5px;
-  top: 375px;
-}
-
-.detail {
-  position: absolute;
-  top: 14px;
-}
-
-.detail a {
+.hero-content p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: #2CA367;
-  text-decoration: none;
+  color: #000000;
 }
 
-.garis-hijau {
-  position: absolute;
-  width: 50.5px;
-  height: 0px;
-  left: 525.5px;
-  top: 425px;
-  border: 1px solid #2CA367;
+.hero-content span {
+  color: #8A8A8A;
 }
 
-.rincian1 {
-  position: absolute;
-  width: 432.5px;
-  height: 0px;
-  left: 525.5px;
-  top: 426px;
-  border: 1px solid #DDDDDD;
+.hero-content ul {
+  padding-left: 0 !important;
 }
 
-.rincian-barang {
-  display: flex;
-  flex-direction: row;
-  gap: 5rem;
+.hero-content ul li {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #868686;
+  list-style: none;
+}
+
+.card-item .btn-input {
+  justify-content: center;
   align-items: center;
-  justify-content: center;
+  width: 120px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #a6a6a6;
+  border-radius: 7px;
 }
 
-.kondisi {
-  position: absolute;
-  top: 28rem;
-  left: 33rem;
+.card-item .btn-input button {
+  font-size: 20px;
+  padding: 0 30px;
+  background: none;
+  border: none;
+}
+
+.card-item {
+  padding: 0 25px;
+  top: 3rem;
+  border-radius: 19px;
+  border: 1px solid #A6A6A6;
+  box-sizing: border-box;
+}
+
+.harga-total {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #868686;
-}
-
-.kondisi span {
-  color: #000000;
-}
-
-.berat {
-  position: absolute;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #868686;
-  top: 30rem;
-  left: 33rem;
-}
-
-.berat span {
-  color: #000000;
-}
-
-.kategori {
-  position: absolute;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #868686;
-  top: 32rem;
-  left: 33rem;
-}
-
-.kategori span {
-  color: #000000;
-}
-
-.etalase {
-  position: absolute;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #868686;
-  top: 34rem;
-  left: 33rem;
-}
-
-.etalase span {
-  color: #000000;
-}
-
-.desc-detail {
-  position: absolute;
-  left: 33rem;
-  top: 37rem;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #000000;
-}
-
-
-.account-sosmed {
-  border-top: 1px solid #a6a6a6;
-  width: 100%;
-  margin: 180px auto;
-  padding: 40px 30px;
-}
-
-.account-sosmed img {
-  width: 100px;
-  height: 100px;
-}
-
-.nama-account {
-  display: flex;
-  justify-content: center;
-  margin-top: -6rem;
-  padding-right: 53rem;
-}
-
-.nama-account p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
 
-.online-account {
-  height: 12px;
-  margin: 2px -2px -2px 2px;
-  width: 12px;
+/* Akun Sosmed */
+.profile-navbar {
+  padding: 40px 0px;
+  border: 8px solid #d9d9d9;
 }
 
-.akun {
-  background: #2CA367;
-  border: 3.5px solid rgb(var(--ig-primary-background));
-  border-radius: 50%;
-  box-sizing: border-box;
-  position: absolute;
-  left: 14%;
+.profile-navbar .profile-user h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.online {
-  display: flex;
-  justify-content: center;
-  margin: -55px auto;
-  padding-right: 54rem;
-  position: relative;
-  top: 51px;
+.profile-navbar .profile-user h2 span {
+  font-size: 40px;
 }
-
-.online p {
-  font-family: 'Poppins';
+.profile-navbar .profile-user h2 {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  color: #2CA367;
-}
-
-.garis-border {
-  position: absolute;
-  height: 136px;
-  left: 33rem;
-  top: 60rem;
-  border: 1px solid #9F9F9F;
-}
-
-.followers {
+  color: var(--hijauPolos);
+  list-style-type: georgian;
   display: flex;
-  justify-content: center;
-  position: relative;
-  top: 50px;
+  align-items: center;
+  gap: 6px;
 }
 
-.followers p {
-  font-family: 'Poppins';
+.profile-navbar .profile-user button {
+  width: 123px;
+  height: 31px;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 10px;
+  line-height: 15px;
   color: #737373;
+  border-radius: 6px;
+  border: 1px solid #C8C8C8;
 }
 
-.jumlah-follow {
-  top: 3rem;
-  display: flex;
-  position: relative;
-  left: -6rem;
+.profile-navbar .profile-follow {
+    border-left: 2px solid #737373;
+    text-align: center;
+}
+.profile-navbar .profile-follow p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #737373;
+}
+.profile-navbar .profile-follow span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
 }
 
-.jumlah-follow p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
-  color: #000000;
-}
+/* Ulasan */
 
-.following {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: -23px;
-  padding-left: 30rem;
-}
-
-.following p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #737373;
-}
-
-.jumlah-following {
-  top: 3rem;
-  display: flex;
-  position: relative;
-  left: -6rem;
-}
-
-.jumlah-following p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
-  color: #000000;
-}
-
-.jam-buka {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -97px;
-}
-
-.jam-buka p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #737373;
-}
-
-.waktu-jam {
-  top: 3rem;
-  display: flex;
-  position: relative;
-  left: -8rem;
-}
-
-.waktu-jam p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
-  color: #000000;
-}
-
-.ulasan-fotovideo {
-  background: #FFFFFF;
+.ulasan .component {
   border: 1px solid #626262;
   border-radius: 17px;
+}
+
+.component p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.ulasan-user i {
+  font-size: 40px;
+}
+.ulasan-user p {
+  font-size: 84px;
+  margin: 0;
+}
+
+.ulasan-user p span {
+  font-size: 30px;
+  color: #eaeaea;
+}
+
+.jumlah-user p {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: #000000;
+}
+
+.rating span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #464646;
+}
+
+.komen p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.ulasan .filter {
+  border: 1px solid #626262;
+  border-radius: 17px;
+}
+
+.card-filter {
+  border: 1px solid #626262;
+  border-radius: 17px;
+}
+
+.rating-ceklis input {
+  width: 20px;
+  height: 20px;
   box-sizing: border-box;
-  position: absolute;
-  width: 871px;
-  height: 698px;
-  left: 55px;
-  top: 1133px;
+  border: 1px solid #959595;
+  border-radius: 3px;
 }
 
-.gaming {
-  position: relative;
-  margin: 40px 85px;
-}
-*--------------------------------------------------------------
-/* Slider Katagory Produk 2 
---------------------------------------------------------------*/
-
-.kategori-produk-2 {
-  padding: 40px 0;
-  border-bottom: var(--bt);
+.rating-ceklis i {
+  font-size: 20px;
 }
 
-/*--------------------------------------------------------------
-.kategori-Pencarian &
---------------------------------------------------------------
-.kategori-produk-3 
-----------------------------------------------------------------*/
-
-.kategori-pencarian,
-.kategori-produk-3 {
-  padding: 40px 0;
-  position: relative;
-  top: -35rem;
-  border-bottom: var(--bt);
-  border: 1px solid #D1D1D1;
-}
-
-.kategori-pencarian .card-item,
-.kategori-produk-3 .card-item {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.02);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 19px;
-  z-index: 9;
-  width: 196px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.kategori-pencarian .card-item .card-img,
-.kategori-produk-3 .card-item .card-img {
-  width: 100%;
-  height: 163px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.kategori-pencarian .card-item .card-title,
-.kategori-produk-3 .card-item .card-title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 11px;
+.rating-ceklis p {
+  font-size: 24px;
   color: #000000;
 }
-.kategori-pencarian .card-item .card-price,
-.kategori-produk-3 .card-item .card-price {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 16px;
-  color: #000000;
-}
-.kategori-pencarian .card-item .btn-card,
-.kategori-produk-3 .card-item .btn-card {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 6px;
-  color: #004b26;
-  padding: 5px 7px;
-  text-decoration: none;
-  background: rgba(0, 255, 56, 0.31);
-  border-radius: 2px;
-}
-.kategori-pencarian .card-item .card-desc,
-.kategori-produk-3 .card-item .card-desc {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 11px;
-  color: #676767;
-}
-.kategori-pencarian .card-item i,
-.kategori-produk-3 .card-item i {
-  font-size: 13px;
-}
-.kategori-pencarian .card-item i span,
-.kategori-produk-3 .card-item i span {
-  margin-left: 2px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 11px;
-  color: #676767;
-}
-
-.judul span {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 20px;
-  color: #2CA367;
-}
-
-.judul a {
-  text-decoration: none;
-}
-
-.kategori-produk-4 {
-  padding: 40px 0;
-  position: relative;
-  top: -35rem;
-  border-bottom: var(--bt);
-  border: 1px solid #D1D1D1;
-}
-
- .card-item,
-.kategori-produk-4 .card-item {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.02);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 19px;
-  z-index: 9;
-  width: 196px;
-  overflow: hidden;
-  padding: 0;
-}
-
- .card-item .card-img,
-.kategori-produk-4 .card-item .card-img {
-  width: 100%;
-  height: 163px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
- .card-item .card-title,
-.kategori-produk-4 .card-item .card-title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 11px;
-  color: #000000;
-}
- .card-item .card-price,
-.kategori-produk-4 .card-item .card-price {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 16px;
-  color: #000000;
-}
- .card-item .btn-card,
-.kategori-produk-4 .card-item .btn-card {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 6px;
-  color: #004b26;
-  padding: 5px 7px;
-  text-decoration: none;
-  background: rgba(0, 255, 56, 0.31);
-  border-radius: 2px;
-}
- .card-item .card-desc,
-.kategori-produk-4 .card-item .card-desc {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 11px;
-  color: #676767;
-}
- .card-item i,
-.kategori-produk-4 .card-item i {
-  font-size: 13px;
-}
- .card-item i span,
-.kategori-produk-4 .card-item i span {
-  margin-left: 2px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 11px;
-  color: #676767;
-}
-
-.judul span {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 20px;
-  color: #2CA367;
-}
-
-.judul a {
-  text-decoration: none;
-}
-
-.img-fluid {
-  transition: all 0.3s;
-}
-.img-fluid:hover {
-  transform: scale(1.1);
-}
-
-
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-    background-color: var(--color-primary);
-    position: relative;
-    top: -25rem;
-    color: white;
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .footer .footer-info .logo {
