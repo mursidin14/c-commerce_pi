@@ -261,7 +261,7 @@ nav .account .btn-daftar:hover {
   border-radius: 12px;
   z-index: 999999;
   /* opacity: 0; */
-  transform: translateY(70px);
+  /* transform: translateY(70px); */
   transition: all 5s ease-out;
 }
 
