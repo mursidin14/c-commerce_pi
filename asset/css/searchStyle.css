@@ -412,7 +412,7 @@ nav .account .btn-daftar:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 19;
   cursor: pointer;
   transition: all 0.3s;
 }
