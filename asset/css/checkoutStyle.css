@@ -29,150 +29,380 @@
 }
 
 /* ------------------------------------------^^^^^^^^^^
-  Navbar Start 
-  ----------------------------------------- >>>>>>>>>> */
-  nav {
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
-    left: 0;right: 0;z-index: 9999;
-  }
-nav .btn img {
-  width: 20px;
-}
-nav .navbar-brand {
-  font-family: "Alien Encounters";
-  font-weight: 400;
-  font-size: 36px;
-  color: var(--hijauPolos);
-  text-decoration: none;
-}
-nav form {
-  height: 43px;
-  align-items: center;
-}
-nav .btn {
-  border: none;
-  transform: translateX(10px);
-}
-nav .btn .search-img {
-  background: none;
-}
-
-nav .form-control {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border: 1px solid #cdcdcd;
-  z-index: 1;
-  padding-left: 7%;
-}
-nav .form-control::placeholder {
-  color: #cdcdcd;
-  font-size: 14px;
-}
-nav .form-control:focus {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--hijauMuda);
-  background: transparent;
-}
-
-nav .icon button:hover {
-  background: var(--hijauMuda);
-  border-radius: 4px;
-}
-nav .icon button {
-  border: none;
-  background: none;
-  transition: 0.3s;
-}
-nav .icon button img {
-  width: 18px;
-}
-nav .account .profil img {
-  width: 28px;
-  height: 25px;
-  border: 2px solid var(--span);
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-nav .account button {
-  display: flex;
-  align-items: center;
-  color: #929292;
-  background: none;
-  border: none;
-}
-
-nav .account .btn-daftar {
-  font-weight: bold;
-}
-nav .account .btn-daftar:hover {
-  background: var(--hijauMuda);
-  border-radius: 4px;
-  color: white;
-}
-
-.burger {
-  position: relative;
-  width: 30px;
-  height: 20px;
-  background: transparent;
-  cursor: pointer;
-  display: block;
-}
-
-.burger input {
-  display: none;
-}
-
-.burger span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: var(--span);
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
-}
-
-.burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-100%);
-}
-
-.burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 0px;
-  left: 5px;
-}
-
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-.burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 22px;
-  left: 5px;
-}
-
+        Navbar Start 
+        ----------------------------------------- >>>>>>>>>> */
+        nav {
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) !important;
+          left: 0;
+          right: 0;
+          z-index: 9999;
+        }
+        nav .btn img {
+          width: 20px;
+        }
+        nav .navbar-brand:hover {
+          cursor: pointer;
+          color: #03ac0e;
+        }
+        nav .navbar-brand {
+          font-family: "Alien Encounters";
+          font-weight: 400;
+          font-size: 36px;
+          color: var(--hijauPolos);
+          text-decoration: none;
+          transition: all 0.5;
+        }
+        nav form {
+          height: 43px;
+          align-items: center;
+        }
+        nav .btn {
+          border: none;
+          transform: translateX(10px);
+        }
+        nav .btn .search-img {
+          background: none;
+        }
+        
+        nav .form-control {
+          background: transparent;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          border: 1px solid #cdcdcd;
+          z-index: 1;
+          padding-left: 7%;
+        }
+        nav .form-control::placeholder {
+          color: #cdcdcd;
+          font-size: 14px;
+        }
+        nav .form-control:focus {
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+          border: 2px solid var(--hijauMuda);
+          outline: none;
+          box-shadow: 0 0 0 2px #028c0a;
+          background: transparent;
+        }
+        
+        nav .icon button:hover {
+          background: var(--hijauMuda);
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        nav .icon button {
+          border: none;
+          background: none;
+          transition: 0.3s;
+        }
+        nav .icon button img {
+          width: 18px;
+        }
+        nav .account .profil img {
+          width: 28px;
+          height: 25px;
+          border: 2px solid var(--span);
+          border-radius: 50%;
+          box-sizing: border-box;
+        }
+        
+        nav .account button {
+          display: flex;
+          align-items: center;
+          color: #929292;
+          background: none;
+          border: none;
+        }
+        
+        nav .account .btn-daftar {
+          font-weight: bold;
+        }
+        nav .account .btn-daftar:hover {
+          background: var(--hijauMuda);
+          border-radius: 4px;
+          color: white;
+        }
+        
+        .burger {
+          position: relative;
+          width: 30px;
+          height: 20px;
+          background: transparent;
+          cursor: pointer;
+          display: block;
+        }
+        
+        .burger input {
+          display: none;
+        }
+        
+        .burger span {
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 100%;
+          background: var(--span);
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+        }
+        
+        .burger span:nth-of-type(1) {
+          top: 0px;
+          transform-origin: left center;
+        }
+        
+        .burger span:nth-of-type(2) {
+          top: 50%;
+          transform: translateY(-50%);
+          transform-origin: left center;
+        }
+        
+        .burger span:nth-of-type(3) {
+          top: 100%;
+          transform-origin: left center;
+          transform: translateY(-100%);
+        }
+        
+        .burger input:checked ~ span:nth-of-type(1) {
+          transform: rotate(45deg);
+          top: 0px;
+          left: 5px;
+        }
+        
+        .burger input:checked ~ span:nth-of-type(2) {
+          width: 0%;
+          opacity: 0;
+        }
+        
+        .burger input:checked ~ span:nth-of-type(3) {
+          transform: rotate(-45deg);
+          top: 22px;
+          left: 5px;
+        }
+        
+        .trolly-menu {
+          width: 400px;
+          display: flex;
+          position: absolute;
+          right: 74px;
+          top: -3px;
+          background: #fff;
+          box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
+          padding: 10px 10px;
+          border-radius: 12px;
+          visibility: hidden;
+          z-index: 999999;
+          opacity: 0;
+          transform: translateY(70px);
+          /* transition: all 5s ease-out; */
+        }
+        
+        .active {
+          visibility: visible;
+          opacity: 1;
+          transition-delay: 0.2s;
+        }
+        
+        .trolly-menu h4 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+        .trolly-menu p {
+          font-size: 14px;
+          color: #31353bad;
+        }
+        
+        .trolly-menu .image {
+          border-radius: 12px 12px 0 0;
+          background: #01cee9;
+          margin: 5px;
+        }
+        .trolly-menu .image img {
+          width: 50%;
+        }
+        
+        .btn-trolly {
+          background-color: var(--bs-indigo);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 14px;
+          font-weight: bold;
+        
+          transition: all 0.5s ease-out;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-trolly:hover {
+          background-color: #028c0a;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+          transform: scale(1.1);
+        }
+        .notif-menu {
+          overflow-y: auto;
+          width: 400px;
+          padding: 0;
+          height: 80vh;
+          display: block;
+          position: absolute;
+          right: 74px;
+          top: -3px;
+          background: #fff;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          border-radius: 12px;
+          z-index: 999999;
+          transform: translateY(70px);
+          transition: all 5s ease-out;
+        }
+        
+        .notif-menu h4 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+        .notif-menu p {
+          font-size: 14px;
+          color: #31353bad;
+        }
+        
+        .notif-menu .image {
+          border-radius: 12px 12px 0 0;
+          background: #01cee9;
+          margin: 5px;
+        }
+        .notif-menu .image img {
+          width: 50%;
+        }
+        .notif-menu .header {
+          width: 100%;
+          height: 43px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          padding: 30px 20px;
+        }
+        .notif-menu .header h1 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+          color: #000000;
+          margin: 0;
+        }
+        .notif-menu .header i {
+          color: var(--span);
+          font-size: 20px;
+        }
+        
+        .notif-menu .about {
+          width: 100%;
+        }
+        
+        .notif-menu .about span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 7px;
+          color: #6d6d6d;
+        }
+        .notif-menu .about h1 {
+          padding: 10px 0;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 12px;
+          color: #000000;
+        }
+        .notif-menu .about p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #6d6d6d;
+        }
+        .notif-menu a:hover {
+          scale: 1.1;
+          color: #03ac0e;
+        }
+        .notif-menu a {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          transition: all 0.3s ease-in-out;
+          text-decoration: none;
+          color: #2ca367;
+        }
+        
+        /* scrollbar */
+        .notif-menu::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+          background-color: #eee;
+        }
+        
+        /* thumb */
+        .notif-menu::-webkit-scrollbar-thumb {
+          background-color: #888;
+          border-radius: 10px;
+          border: 3px solid #eee;
+        }
+        
+        /* thumb on hover */
+        .notif-menu::-webkit-scrollbar-thumb:hover {
+          background-color: #555;
+          border: 3px solid #eee;
+        }
+        
+        /* track */
+        .notif-menu::-webkit-scrollbar-track {
+          background-color: #eee;
+        }
+        
+        /* track on hover */
+        .notif-menu::-webkit-scrollbar-track:hover {
+          background-color: #ddd;
+        }
+        
+        /* message notif start  */
+        .message-menu {
+          width: 250px;
+        
+          height: 260px;
+          display: flex;
+          position: absolute;
+          right: 74px;
+          top: -3px;
+          background: #fff;
+          box-shadow: 0 0px 20px  rgba(0, 0, 0, 0.1);
+          padding: 10px 10px;
+          border-radius: 12px;
+          z-index: 999999;
+          transform: translateY(70px);
+          transition: all 5s ease-out;
+        }
+        
+        .message-menu a:hover{
+          color: var(--hijauMuda);
+        }
+        .message-menu a {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          text-decoration: none;
+          padding: 10px;
+          color: #000000;
+        }
+        
 /*--------------------------------------------------------------
   # checkout
   --------------------------------------------------------------*/

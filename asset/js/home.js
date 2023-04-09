@@ -1,38 +1,42 @@
-const menuBar = document.querySelector('.menu-bar');
-const trolly = document.querySelector('#trolly');
-const overlay = document.querySelector('.overlay')
-const btnCard = document.querySelector('.btn-card')
-const caroAktiv = document.querySelector('.carousel-item')
+// Get DOM elements
+const btnTrolly = document.querySelector('#trolly');
+const btnNotif = document.querySelector('#notif');
+const btnMessage = document.querySelector('#message');
+const trollyForm = document.querySelector('.trolly-menu');
+const notifForm = document.querySelector('#notif-menu');
+const messageForm = document.querySelector('.message-menu');
 
-if (trolly) {
-  trolly.addEventListener('click', (event) => {
+// Add event listeners
+if (btnTrolly) {
+  btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
-    menuBar.classList.toggle('menuActive');
-    overlay.classList.toggle('overlayActive');
-  });
-}
-//     trolly.addEventListener('mouseenter', () => {
-//         menuBar.classList.add('menuActive');
-//         overlay.classList.toggle('overlayActive')
-//     });
-    
-//     trolly.addEventListener('mouseleave', () => {
-//         menuBar.classList.remove('menuActive');
-//         overlay.classList.toggle('overlayActive')
-//   });
-
-
-if (overlay) {
-  window.addEventListener('click', (event) => {
-      if (!event.target.closest('.menu-bar') && !event.target.closest('#trolly')) {
-        menuBar.classList.remove('menuActive');
-        overlay.classList.remove('overlayActive');
-      }
+    trollyForm.classList.toggle('active');
+    messageForm.classList.add('d-none');
+    notifForm.classList.add('d-none');
   });
 }
 
+if (btnNotif) {
+  btnNotif.addEventListener('click', (event) => {
+    event.preventDefault();
+    notifForm.classList.toggle('d-none');
+    trollyForm.classList.remove('active');
+    messageForm.classList.add('d-none');
+  });
+}
 
-// btnCard.addEventListener('click', () => {
-//   caroAktiv.classList.toggle('active');
-//   alert('daddad')
-// })
+if (btnMessage) {
+  btnMessage.addEventListener('click', (event) => {
+    event.preventDefault();
+    messageForm.classList.toggle('d-none');
+    trollyForm.classList.remove('active');
+    notifForm.classList.add('d-none');
+  });
+}
+
+// Add global click event listener
+// window.addEventListener('click', () => {
+//   messageForm.classList.add('d-none');
+//   trollyForm.classList.remove('active');
+//   notifForm.classList.add('d-none');
+// });

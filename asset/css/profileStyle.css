@@ -119,6 +119,7 @@ nav .form-control:focus {
 nav .icon button:hover {
   background: var(--hijauMuda);
   border-radius: 4px;
+  cursor: pointer;
 }
 nav .icon button {
   border: none;
@@ -213,7 +214,7 @@ nav .account .btn-daftar:hover {
   left: 5px;
 }
 
-.menu-bar {
+.trolly-menu {
   width: 400px;
   display: flex;
   position: absolute;
@@ -226,52 +227,32 @@ nav .account .btn-daftar:hover {
   visibility: hidden;
   z-index: 999999;
   opacity: 0;
-  transform: translateY(-10px);
-  transition: all 5s ease-out;
+  transform: translateY(70px);
+  /* transition: all 5s ease-out; */
 }
 
-.menuActive {
+.active {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
   transition-delay: 0.2s;
 }
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  top: 114%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  cursor: pointer;
-  transition: all 0.3s;
-}
 
-.overlayActive {
-  display: block;
-  transition: all 0.3s;
-}
-
-.menu-bar h4 {
+.trolly-menu h4 {
   font-size: 18px;
   font-weight: bold;
 }
 
-.menu-bar p {
+.trolly-menu p {
   font-size: 14px;
   color: #31353bad;
 }
 
-.menu-bar .image {
+.trolly-menu .image {
   border-radius: 12px 12px 0 0;
   background: #01cee9;
   margin: 5px;
 }
-.menu-bar .image img {
+.trolly-menu .image img {
   width: 50%;
 }
 
@@ -293,14 +274,193 @@ nav .account .btn-daftar:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
+.notif-menu {
+  overflow-y: auto;
+  width: 400px;
+  padding: 0;
+  height: 80vh;
+  display: block;
+  position: absolute;
+  right: 74px;
+  top: -3px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  z-index: 999999;
+  /* opacity: 0; */
+  transform: translateY(70px);
+  transition: all 5s ease-out;
+}
+
+.notif-menu h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.notif-menu p {
+  font-size: 14px;
+  color: #31353bad;
+}
+
+.notif-menu .image {
+  border-radius: 12px 12px 0 0;
+  background: #01cee9;
+  margin: 5px;
+}
+.notif-menu .image img {
+  width: 50%;
+}
+.notif-menu .header {
+  width: 100%;
+  height: 43px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 20px;
+}
+.notif-menu .header h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+.notif-menu .header i {
+  color: var(--span);
+  font-size: 20px;
+}
+
+.notif-menu .about {
+  width: 100%;
+}
+
+.notif-menu .about span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 7px;
+  color: #6d6d6d;
+}
+.notif-menu .about h1 {
+  padding: 10px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 12px;
+  color: #000000;
+}
+.notif-menu .about p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6d6d6d;
+}
+.notif-menu a:hover {
+  scale: 1.1;
+  color: #03ac0e;
+}
+.notif-menu a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #2ca367;
+}
+
+/* scrollbar */
+.notif-menu::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #eee;
+}
+
+/* thumb */
+.notif-menu::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #eee;
+}
+
+/* thumb on hover */
+.notif-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  border: 3px solid #eee;
+}
+
+/* track */
+.notif-menu::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+/* track on hover */
+.notif-menu::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+}
+
+/* message notif start  */
+.message-menu {
+  width: 250px;
+
+  height: 260px;
+  display: flex;
+  position: absolute;
+  right: 74px;
+  top: -3px;
+  background: #fff;
+  box-shadow: 0 0px 20px  rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 12px;
+  z-index: 999999;
+  transform: translateY(70px);
+  transition: all 5s ease-out;
+}
+
+.message-menu a:hover{
+  color: var(--hijauMuda);
+}
+.message-menu a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
+  color: #000000;
+}
 
 /*--------------------------------------------------------------
-    # profile-navbar
+    # profilnotif-menu
     --------------------------------------------------------------*/
 .profile-navbar {
-  padding: 110px 0px;
+  padding: 110px 0px 0 0;
 }
-.profile-navbar .profile-user {
+.profile-navbar .container-fluid {
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+.profile-card .container-fluid {
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+
+.profile-navbar img {
+  transition: all 0.3s ease-out;
+
+  transform: rotateZ(60deg);
+}
+.profile-navbar img:hover {
+  transform: rotateZ(0deg);
 }
 
 .profile-navbar .profile-user h1 {
@@ -328,6 +488,9 @@ nav .account .btn-daftar:hover {
   gap: 6px;
 }
 
+.profile-navbar .profile-user button:hover {
+  scale: 1.1;
+}
 .profile-navbar .profile-user button {
   width: 123px;
   height: 31px;
@@ -338,32 +501,184 @@ nav .account .btn-daftar:hover {
   line-height: 15px;
   color: #737373;
   border-radius: 6px;
-  border: 1px solid #C8C8C8;
+  border: 1px solid #c8c8c8;
+  transition: all 0.5s ease-out;
 }
 
-.profile-navbar .profile-follow {
-    border-left: 2px solid #737373;
+.profile-navbar .profile-follow a:hover {
+  cursor: pointer;
+  color: var(--hijauMuda);
+  scale: 1.1;
 }
-.profile-navbar .profile-follow p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height */
-    color: #737373;
+.profile-navbar .profile-follow a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #737373;
+  transition: all 0.4s ease-out;
+  display: block;
+  text-decoration: none;
 }
-.profile-navbar .profile-follow span{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    color: #000000;
+.profile-navbar .profile-follow span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
 }
-.profile-navbar .profile-follow {
+.tengah {
+  border-right: 2px solid #737373;
+}
+/*--------------------------------------------------------------
+    #profile-card
+    --------------------------------------------------------------*/
+.profile-card {
+  padding: 20px 0 110px 0;
+}
+.profile-card .card-menu {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  border-radius: 19px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.profile-card .card-menu h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  padding: 10px 0;
+}
+.profile-card .card-menu h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.profile-card .card-menu p:hover {
+  scale: 1.1;
+  font-weight: bold;
+  color: var(--hijauMuda);
+  cursor: pointer;
+}
+.profile-card .card-menu p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  transition: all 0.5s ease-out;
+}
 
+/*--------------------------------------------------------------
+    #card item
+    --------------------------------------------------------------*/
+
+.card-item {
+  border: 0.2px solid rgba(0, 0, 0, 0.2);
+  width: 196px;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  z-index: 9;
+  overflow: hidden;
 }
+
+.img-fluid {
+  transition: all 0.5s ease-out;
+}
+.img-fluid:hover {
+  scale: 1.2;
+}
+
+.profile-card {
+  padding: 50px 0;
+}
+
+.profile-card .card-item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  z-index: 9;
+  width: 196px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-img,
+.profile-card .card-item .card-img {
+  width: 100%;
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-title,
+.profile-card .card-item .card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #000000;
+}
+.card-price,
+.profile-card .card-item .card-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.profile-card .card-item .btn-card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 6px;
+  color: #004b26;
+  padding: 5px 7px;
+  text-decoration: none;
+  background: rgba(0, 255, 56, 0.31);
+  border-radius: 2px;
+}
+.card-desc,
+.profile-card .card-item .card-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
+}
+i,
+.profile-card .card-item i {
+  font-size: 13px;
+}
+i span,
+.profile-card .card-item i span {
+  margin-left: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 11px;
+  color: #676767;
+}
+
 /*--------------------------------------------------------------
     # Footer
     --------------------------------------------------------------*/
@@ -507,5 +822,25 @@ nav .account .btn-daftar:hover {
     .navbar-brand {
       font-size: 20px;
     }
+  }
+
+  .tengah {
+    border-right: none;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #737373;
+  }
+
+  .profile-navbar .profile-follow {
+    margin-top: 20px;
+  }
+  .profile-navbar .profile-follow a {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .profile-navbar .profile-follow span {
+    font-size: 20px;
+  }
+  .footer .footer-links ul li {
+    justify-content: center;
   }
 }
