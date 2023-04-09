@@ -41,8 +41,6 @@ if (btnMessage) {
 }
 
 // Add global click event listener
-// window.addEventListener('click', () => {
-//   messageForm.classList.add('d-none');
-//   trollyForm.classList.remove('active');
-//   notifForm.classList.add('d-none');
-// });
+window.addEventListener('click', () => {
+  
+});
