@@ -5,8 +5,11 @@ const btnMessage = document.querySelector('#message');
 const trollyForm = document.querySelector('.trolly-menu');
 const notifForm = document.querySelector('#notif-menu');
 const messageForm = document.querySelector('.message-menu');
-const 
+const ovrTrolly = document.querySelector('.ovr-trolly');
 
+ovrTrolly.addEventListener('click', () => {
+  alert('dsd')
+})
 // Add event listeners
 if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
