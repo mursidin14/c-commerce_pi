@@ -394,14 +394,12 @@ input {
 
 /* Ulasan */
 
-.ulasan-comen {
-  width: 871px;
-  height: 698px;
+.ulasan .component {
   border: 1px solid #626262;
   border-radius: 17px;
 }
 
-.ulasan p {
+.component p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -409,8 +407,23 @@ input {
   line-height: 36px;
 }
 
-.ulasan h4 {
-  padding: 1rem 1rem;
+.ulasan-user i {
+  font-size: 40px;
+}
+.ulasan-user p {
+  font-size: 84px;
+  margin: 0;
+}
+
+.ulasan-user p span {
+  font-size: 30px;
+  color: #eaeaea;
+}
+
+.jumlah-user p {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: #000000;
 }
 
 .rating span {
@@ -430,6 +443,34 @@ input {
   line-height: 22px;
   color: #000000;
 }
+
+.ulasan .filter {
+  border: 1px solid #626262;
+  border-radius: 17px;
+}
+
+.card-filter {
+  border: 1px solid #626262;
+  border-radius: 17px;
+}
+
+.rating-ceklis input {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #959595;
+  border-radius: 3px;
+}
+
+.rating-ceklis i {
+  font-size: 20px;
+}
+
+.rating-ceklis p {
+  font-size: 24px;
+  color: #000000;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
