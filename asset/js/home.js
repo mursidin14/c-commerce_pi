@@ -6,6 +6,8 @@ const trollyForm = document.querySelector('.trolly-menu');
 const notifForm = document.querySelector('#notif-menu');
 const messageForm = document.querySelector('.message-menu');
 const ovrTrolly = document.querySelector('.ovr-trolly');
+const ovrNotif = document.querySelector('.ovr-notif');
+const ovrMessage = document.querySelector('.ovr-message');
 
 ovrTrolly.addEventListener('click', () => {
   alert('dsd')
@@ -14,27 +16,27 @@ ovrTrolly.addEventListener('click', () => {
 if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
-    trollyForm.classList.toggle('active');
-    messageForm.classList.add('d-none');
-    notifForm.classList.add('d-none');
+    ovrTrolly.classList.toggle('d-none');
+    ovrMessage.classList.add('d-none');
+    ovrNotif.classList.add('d-none');
   });
 }
 
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
-    notifForm.classList.toggle('d-none');
-    trollyForm.classList.remove('active');
-    messageForm.classList.add('d-none');
+    ovrNotif.classList.toggle('d-none');
+    ovrTrolly.classList.remove('d-none');
+    ovrMessage.classList.add('d-none');
   });
 }
 
 if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
-    messageForm.classList.toggle('d-none');
-    trollyForm.classList.remove('active');
-    notifForm.classList.add('d-none');
+    ovrMessage.classList.toggle('d-none');
+    ovrTrolly.classList.remove('d-none');
+    ovrNotif.classList.add('d-none');
   });
 }
 
