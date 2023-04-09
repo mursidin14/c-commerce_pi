@@ -5,11 +5,7 @@ const btnMessage = document.querySelector('#message');
 const ovrTrolly = document.querySelector('.ovr-trolly');
 const ovrNotif = document.querySelector('.ovr-notif');
 const ovrMessage = document.querySelector('.ovr-message');
-const overlay = document.querySelectorAll('.overlay');
 
-overlay.addEventListener('click', () => {
-  alert('dadgba')
-})
 // Add event listeners
 if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
