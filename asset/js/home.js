@@ -2,12 +2,10 @@
 const btnTrolly = document.querySelector('#trolly');
 const btnNotif = document.querySelector('#notif');
 const btnMessage = document.querySelector('#message');
-const trollyForm = document.querySelector('.trolly-menu');
-const notifForm = document.querySelector('#notif-menu');
-const messageForm = document.querySelector('.message-menu');
 const ovrTrolly = document.querySelector('.ovr-trolly');
 const ovrNotif = document.querySelector('.ovr-notif');
 const ovrMessage = document.querySelector('.ovr-message');
+const overlay = document.querySelectorAll('.overlay');
 
 ovrTrolly.addEventListener('click', () => {
   alert('dsd')
@@ -42,5 +40,5 @@ if (btnMessage) {
 
 // Add global click event listener
 window.addEventListener('click', () => {
-  
+  overlay.classList.add('d-none')
 });
