@@ -26,7 +26,7 @@ if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
     ovrNotif.classList.toggle('d-none');
-    ovrTrolly.classList.remove('d-none');
+    ovrTrolly.classList.add('d-none');
     ovrMessage.classList.add('d-none');
   });
 }
@@ -35,7 +35,7 @@ if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
     ovrMessage.classList.toggle('d-none');
-    ovrTrolly.classList.remove('d-none');
+    ovrTrolly.classList.add('d-none');
     ovrNotif.classList.add('d-none');
   });
 }
