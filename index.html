@@ -21,21 +21,20 @@
 
     <!-- My Css  -->
     <link rel="stylesheet" href="asset/css/Style.css" />
-    <!-- <link rel="stylesheet" href="asset/css/homePage.css" /> -->
-    <link rel="stylesheet" href="asset/css/homeGrid.css" />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
   </head>
   <body>
     <!-- Navbar Start  -->
     <nav class="navbar position-fixed justify-content-center bg-white">
       <div class="container-fluid position-relative row gap-lg-1 justify-content-center">
-        <a class="navbar-brand col-2 d-none d-lg-block">Shopfrieger</a>
+        <a href="#kategori-produk-1" class="navbar-brand col-2 d-none d-lg-block">Shopfrieger</a>
         <form class="d-flex col-12 col-lg-9 col-md-10 position-relative" role="search">
           <button class="btn position-absolute btn-outline-success" type="submit"><img class="search-img" src="asset/img/img-homePage/section-home/search.png" alt="" /></button>
           <input class="form-control ms-2" type="search" placeholder="RTX 3080 TI" aria-label="Search" />
           <div class="d-flex icon ms-lg-3 gap-2 align-items-center">
             <button id="trolly"><img src="asset/img/img-homePage/section-home/trolly.png" alt="" /></button>
-            <button><img src="asset/img/img-homePage/section-home/notif.png" alt="" /></button>
-            <button><img src="asset/img/img-homePage/section-home/message.png" alt="" /></button>
+            <button id="notif"><img src="asset/img/img-homePage/section-home/notif.png" alt="" /></button>
+            <button id="message"><img src="asset/img/img-homePage/section-home/message.png" alt="" /></button>
           </div>
           <div class="d-flex account ms-2 gap-2 align-items-center">
             <button class="profil"><img src="asset/img/img-homePage/section-home/account.png" alt="" /></button>
@@ -48,9 +47,15 @@
             </label>
           </div>
         </form>
+      </div>
+    </nav>
+    <!-- Navbar End  -->
+
+    <!-- CONTETN sTART  -->
+    
         <!-- bagian Menu start  -->
-        <div class="overlay">
-          <div id="menu-bar" class="menu-bar flex-column justify-content-between align-items-center">
+        <div class="overlay d-none ovr-trolly">
+          <div id="trolly-menu" class="trolly-menu flex-column justify-content-between align-items-center">
             <div class="image text-center">
               <img src="asset/img/img-homePage/trolly/pin (2).jpg" alt="" />
             </div>
@@ -62,9 +67,47 @@
             <button class="btn-trolly">Lihat Rekomendasi</button>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- Navbar End  -->
+        <div class="overlay d-none ovr-notif">
+          <div id="notif-menu" class="notif-menu justify-content-start align-items-center">
+            <div class="d-flex header align-items-center justify-content-between">
+              <h1>Notifikasi</h1>
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <div class="about p-4">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+              <img class="py-3" src="asset/img/img-homePage/trolly/brand-notif.png" width="100%" alt="" />
+            </div>
+            <div class="about p-4 bg-primary-subtle">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+            </div>
+            <div class="about mt-3 p-4 bg-primary-subtle shadow">
+              <span>Promo</span>
+              <h1>Diskon 90% Cusss, bungkus!</h1>
+              <p>⚡ Sale dari 1 rb. Beli baju di Zoya, Zascia Mecaa, Erigo, LAF Project & Hibabchic tinggal klik ⏭</p>
+            </div>
+            <div class="d-flex mt-3 p-4 justify-content-between align-items-center w-100">
+              <a href="#">Tandai semua dibaca</a>
+              <a href="#">Lihat Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay d-none ovr-message">
+          <div id="message-menu" class="message-menu flex-column justify-content-between align-items-start">
+            <a href="#">Chat</a>
+            <a href="#">Diskusi</a>
+            <a href="#">Ulasan</a>
+            <a href="#">Pesan Bantuan</a>
+            <a href="#">Pesanan Dikomplain</a>
+          </div>
+        </div>
+
+        <!-- Notif-menu  -->
+    <!-- CONTETN End  -->
 
     <!-- Hero Start -->
     <section id="hero" class="hero">
@@ -270,20 +313,19 @@
     <!-- Katagory Layanan End  -->
 
     <!-- kategori Product-1 Start -->
-    <section id="" class="kategori-produk-1 position-relative">
+    <section id="kategori-produk-1" class="kategori-produk-1 position-relative">
       <div class="container">
         <h3 class="text-start my-3 judul">Special Offer <span>Berakhir Dalam</span></h3>
-        <div id="carouselExampleControlsNoTouching" class="carousel slide position-relative " data-bs-touch="false">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide position-relative" data-bs-touch="false">
           <div class="card-hero"></div>
           <div class="carousel-inner position-absolute top-0">
             <div class="carousel-item active">
               <div class="content d-flex align-items-center position-relative">
-              
-                <div class="card-inner d-flex justify-content-center align-items-center pe-2">
+                <div class="card-inner d-flex justify-content-end align-items-center pe-2">
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 2.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -291,7 +333,7 @@
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 18.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Makassar</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -299,7 +341,7 @@
                   <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
-                    <a href="#" class="ms-3 btn-card">Grosir</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Grosir</a>
                     <div class="ps-3 desc">Malang</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
@@ -307,7 +349,7 @@
                   <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
@@ -315,7 +357,7 @@
                   <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
-                    <a href="#" class="ms-3 btn-card">41%</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">41%</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -323,12 +365,12 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="content justify-content-center page-next">
-                <div class="card-inner2 d-flex justify-content-center gap-5 align-items-center">
+              <div class="content justify-content-end justify-content-end page-next">
+                <div class="card-inner2 d-flex justify-content-center gap-3 align-items-center">
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 2.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -336,31 +378,31 @@
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 18.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Makassar</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block d-md-block">
+                  <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
-                    <a href="#" class="ms-3 btn-card">Grosir</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Grosir</a>
                     <div class="ps-3 desc">Malang</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
-                    <a href="#" class="ms-3 btn-card">41%</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">41%</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -368,44 +410,44 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="content justify-content-center d-flex page-next">
-                <div class="card-inner3 d-flex justify-content-center gap-5 align-items-center">
-                  <div class="card-item ">
+              <div class="content justify-content-lg-end justify-content-end d-flex page-next">
+                <div class="card-inner3 d-flex justify-content-end gap-3 align-items-center">
+                  <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 2.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item ">
+                  <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 2.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 18.500</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Makassar</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block d-md-block">
+                  <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
-                    <a href="#" class="ms-3 btn-card">Grosir</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Grosir</a>
                     <div class="ps-3 desc">Malang</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
-                    <a href="#" class="ms-3 btn-card">Cashback</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">Cashback</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
-                    <a href="#" class="ms-3 btn-card">41%</a>
+                    <a href="page/checkoutPage.html" class="ms-3 btn-card">41%</a>
                     <div class="ps-3 desc">Bekasi</div>
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
@@ -428,10 +470,10 @@
     <!-- Katagory Product-1 End -->
 
     <!-- Katagory Pencarian Start -->
-    <section id="kategori-pencarian" class="kategori-pencarian  position-relative">
+    <section id="kategori-pencarian" class="kategori-pencarian position-relative">
       <div class="container">
         <h3 class="text-start my-3 judul">Berdasarkan Pencarianmu <span>Lihat Semua</span></h3>
-        <div class="content  justify-content-center d-flex page-next">
+        <div class="content justify-content-center d-flex page-next">
           <div class="row mb-3 justify-content-center gap-3 align-items-center">
             <div class="card-item col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
               <div class="card-img"><img src="asset/img/img-homePage/product/product 5.png" width="100%" class="img-fluid" alt="" /></div>
@@ -498,10 +540,9 @@
         <h3 class="text-start my-3 judul">Special Offer <span>Berakhir Dalam</span></h3>
         <div id="carouselExampleInterval" class="carousel position-relative slide" data-bs-ride="carousel">
           <div class="card-hero"></div>
-          <div class="carousel-inner  position-absolute top-0">
+          <div class="carousel-inner position-absolute top-0">
             <div class="carousel-item active" data-bs-interval="10000">
               <div class="content d-flex align-items-center position-relative">
-              
                 <div class="card-inner d-flex justify-content-center align-items-center pe-2">
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
@@ -519,7 +560,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block d-md-block">
+                  <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 10.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
                     <a href="#" class="ms-3 btn-card">Grosir</a>
@@ -527,7 +568,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block ">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
                     <a href="#" class="ms-3 btn-card">Cashback</a>
@@ -535,7 +576,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block ">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
                     <a href="#" class="ms-3 btn-card">41%</a>
@@ -546,8 +587,8 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <div class="content justify-content-center page-next">
-                <div class="card-inner2 d-flex justify-content-center gap-5 align-items-center">
+              <div class="content justify-content-end page-next">
+                <div class="card-inner2 d-flex justify-content-end gap-3 align-items-center">
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 2.500</div>
@@ -564,7 +605,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block d-md-block">
+                  <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
                     <a href="#" class="ms-3 btn-card">Grosir</a>
@@ -572,7 +613,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
                     <a href="#" class="ms-3 btn-card">Cashback</a>
@@ -580,7 +621,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
                     <a href="#" class="ms-3 btn-card">41%</a>
@@ -591,8 +632,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="content justify-content-center d-flex page-next">
-                <div class="card-inner3 d-flex justify-content-center gap-5 align-items-center">
+              <div class="content justify-content-end d-flex page-next">
+                <div class="card-inner3 d-flex justify-content-end gap-3 align-items-center">
                   <div class="card-item">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 1.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 2.500</div>
@@ -609,7 +650,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 5 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block d-md-block">
+                  <div class="card-item d-none d-lg-block d-md-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 10.000</div>
                     <a href="#" class="ms-3 btn-card">Grosir</a>
@@ -617,7 +658,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 4,0 | Terjual 8 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 3.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 35.000</div>
                     <a href="#" class="ms-3 btn-card">Cashback</a>
@@ -625,7 +666,7 @@
                     <i class="ps-3 bi bi-star-fill text-warning me-2"><span> 5,0 | Terjual 9 rb+</span> </i>
                   </div>
 
-                  <div class="card-item  d-none d-lg-block">
+                  <div class="card-item d-none d-lg-block">
                     <div class="card-img img-fluid"><img src="asset/img/img-homePage/product/product 4.png" width="100%" alt="" /></div>
                     <div class="ps-3 card-price">Rp 168.000</div>
                     <a href="#" class="ms-3 btn-card">41%</a>
@@ -864,7 +905,7 @@
 
     <!-- Footer Start -->
     <footer id="footer" class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-3 col-6 footer-links text-center text-md-start">
             <h4>ShopFrieger</h4>

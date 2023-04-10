@@ -182,29 +182,28 @@
           top: 22px;
           left: 5px;
         }
-        
+     
         .trolly-menu {
           width: 400px;
           display: flex;
           position: absolute;
           right: 74px;
-          top: -3px;
+          top: 0px;
           background: #fff;
           box-shadow: 0 -1px 9px 0 rgba(0, 0, 0, 0.1);
           padding: 10px 10px;
           border-radius: 12px;
-          visibility: hidden;
           z-index: 999999;
-          opacity: 0;
-          transform: translateY(70px);
+          transition-delay: 0.2s;
+          transform: translateY(80px);
           /* transition: all 5s ease-out; */
         }
         
-        .active {
-          visibility: visible;
-          opacity: 1;
-          transition-delay: 0.2s;
-        }
+        /* .active {
+                  visibility: visible;
+                  opacity: 1;
+                  
+                } */
         
         .trolly-menu h4 {
           font-size: 18px;
@@ -251,12 +250,13 @@
           display: block;
           position: absolute;
           right: 74px;
-          top: -3px;
+          top: 0px;
           background: #fff;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
           border-radius: 12px;
           z-index: 999999;
-          transform: translateY(70px);
+          /* opacity: 0; */
+          transform: translateY(80px);
           transition: all 5s ease-out;
         }
         
@@ -380,17 +380,17 @@
           display: flex;
           position: absolute;
           right: 74px;
-          top: -3px;
+          top: 0px;
           background: #fff;
-          box-shadow: 0 0px 20px  rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
           padding: 10px 10px;
           border-radius: 12px;
           z-index: 999999;
-          transform: translateY(70px);
+          transform: translateY(80px);
           transition: all 5s ease-out;
         }
         
-        .message-menu a:hover{
+        .message-menu a:hover {
           color: var(--hijauMuda);
         }
         .message-menu a {
@@ -403,6 +403,20 @@
           color: #000000;
         }
         
+        .overlay {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
 /*--------------------------------------------------------------
   # checkout
   --------------------------------------------------------------*/
@@ -774,7 +788,9 @@
   .checkout h1 {
     font-size: 5px;
   }
-
+  .message-menu,.notif-menu,.trolly-menu {
+    transform: translateY(59px);
+  }
   .checkout .table thead {
     font-size: 15px;
   }

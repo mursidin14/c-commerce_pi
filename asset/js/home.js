@@ -1,42 +1,47 @@
 // Get DOM elements
+const btnProfil = document.querySelector('.profil');
+const btnDaftar = document.querySelector('.btn-daftar');
 const btnTrolly = document.querySelector('#trolly');
 const btnNotif = document.querySelector('#notif');
 const btnMessage = document.querySelector('#message');
-const trollyForm = document.querySelector('.trolly-menu');
-const notifForm = document.querySelector('#notif-menu');
-const messageForm = document.querySelector('.message-menu');
+const ovrTrolly = document.querySelector('.ovr-trolly');
+const ovrNotif = document.querySelector('.ovr-notif');
+const ovrMessage = document.querySelector('.ovr-message');
 
 // Add event listeners
+if (btnProfil) {
+  btnProfil.addEventListener('click', (event) => {
+    event.preventDefault();
+  });
+}
+if (btnDaftar) {
+  btnDaftar.addEventListener('click', (event) => {
+    event.preventDefault()
+  });
+}
 if (btnTrolly) {
   btnTrolly.addEventListener('click', (event) => {
     event.preventDefault();
-    trollyForm.classList.toggle('active');
-    messageForm.classList.add('d-none');
-    notifForm.classList.add('d-none');
+    ovrTrolly.classList.toggle('d-none');
+    ovrMessage.classList.add('d-none');
+    ovrNotif.classList.add('d-none');
   });
 }
 
 if (btnNotif) {
   btnNotif.addEventListener('click', (event) => {
     event.preventDefault();
-    notifForm.classList.toggle('d-none');
-    trollyForm.classList.remove('active');
-    messageForm.classList.add('d-none');
+    ovrNotif.classList.toggle('d-none');
+    ovrTrolly.classList.add('d-none');
+    ovrMessage.classList.add('d-none');
   });
 }
 
 if (btnMessage) {
   btnMessage.addEventListener('click', (event) => {
     event.preventDefault();
-    messageForm.classList.toggle('d-none');
-    trollyForm.classList.remove('active');
-    notifForm.classList.add('d-none');
+    ovrMessage.classList.toggle('d-none');
+    ovrTrolly.classList.add('d-none');
+    ovrNotif.classList.add('d-none');
   });
 }
-
-// Add global click event listener
-// window.addEventListener('click', () => {
-//   messageForm.classList.add('d-none');
-//   trollyForm.classList.remove('active');
-//   notifForm.classList.add('d-none');
-// });

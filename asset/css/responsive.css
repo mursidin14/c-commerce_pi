@@ -116,6 +116,42 @@ Header Start
   .img-visa {
     transform: translateX(-50%);
   }
+  .message-menu,.notif-menu,.trolly-menu {
+    transform: translateY(59px);
+
+  }
+  .img-visa {
+    transform: translate(520%, -125%) !important;
+  }
+  .trolly h1 {
+    font-size: 5px;
+  }
+
+  .trolly .table thead {
+    font-size: 15px;
+  }
+  .trolly .table tbody {
+    font-size: 12px;
+  }
+  .trolly .table img {
+    width: 50px;
+    height: 50px;
+  }
+  .checkmark {
+    top: -10px;
+  }
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+  .card-filter,
+  .kategori .card-item1,
+  .etalase .card-item2 {
+    text-align: center;
+  }
+  .etalase .card-item2 {
+    transform: translateY(0px);
+  }
+
 }
 @media (min-width: 1200px) {
   .kategori-layanan .card .card-body {
@@ -126,6 +162,22 @@ Header Start
 @media (min-width: 1365px) {
   .hero {
     background-attachment: fixed;
-    padding: 40px;
+    padding: 110px 20px 50px 20px;
   }
+}
+@media (max-width: 576px) {
+  .footer .footer-links ul li {
+    justify-content: center;
+  }
+
+ 
+  .card-hilang {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  }
+  
 }
